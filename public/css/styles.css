@@ -93,3 +93,7 @@ body {
 
 .site {
   margin-left: 250px; }
+
+.btn-success {
+  background-color: #1AB4B2 !important;
+  border-color: white !important; }
