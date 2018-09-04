@@ -7,6 +7,17 @@ body {
 .red {
   background-color: blue; }
 
+@media screen and (max-width: 767px) {
+  .workpage--carousel, .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--related {
+    border: none !important;
+    margin: 20px; } }
+
 #workpageBody {
   background-color: grey; }
 
@@ -26,6 +37,30 @@ body {
   .workpage--features__content {
     font-size: 10px; }
 
+body {
+  font-family: "Roboto" background-color gray; }
+
+.card {
+  background-color: aliceblue;
+  font-family: "Roboto"; }
+  .card__card-body {
+    text-align: center;
+    color: white;
+    background-color: #22B8B3;
+    padding: 11px;
+    font-family: "Roboto"; }
+  .card__card-body--q {
+    background-color: #1C2326;
+    padding: 10px;
+    text-align: center;
+    color: #F3F3F3;
+    font-family: "Roboto"; }
+  .card__card-body--c {
+    color: #22B8B3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem; }
+
 .sidenav {
   background-color: black;
   position: fixed;
@@ -34,6 +69,27 @@ body {
   z-index: 1;
   top: 0;
   left: 0; }
+
+.sidenav__list {
+  list-style: none;
+  padding: 0; }
+
+.sidenav__item {
+  text-align: right;
+  border-bottom: darkgray solid 1px; }
+  .sidenav__item--link {
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 1rem;
+    color: white;
+    background-color: #2E3639; }
+  .sidenav__item--link:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #24AEAE; }
+
+.sidenav__active {
+  background-color: #24AEAE; }
 
 .site {
   margin-left: 250px; }

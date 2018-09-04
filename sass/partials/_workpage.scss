@@ -1,3 +1,20 @@
+@media screen and (max-width: 767px) {
+    .workpage{
+        &--carousel{
+            border: none !important;
+            margin: 10px;
+        }
+        &--text{
+            border: none !important;
+            margin: 10px;
+        }
+        &--related{
+            border: none !important;
+            margin: 20px;
+        }
+    }
+}
+
 #workpageBody{
     background-color: grey;
 }
