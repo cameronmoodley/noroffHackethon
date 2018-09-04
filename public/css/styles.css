@@ -16,3 +16,15 @@ body {
   background-color: white; }
   .workpage--carousel {
     border-right: 1px solid lightgrey; }
+
+.sidenav {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+
+.site {
+  margin-left: 250px; }
