@@ -11,11 +11,10 @@ body {
   background-color: black;
   position: fixed;
   height: 100%;
-  width: 240px;
+  width: 250px;
   z-index: 1;
   top: 0;
   left: 0; }
 
 .site {
-  margin-left: 240px;
-  height: 5000px; }
+  margin-left: 250px; }
