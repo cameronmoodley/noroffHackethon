@@ -19,6 +19,33 @@ body {
   .workpage--project__gallery img {
     margin: 5px; }
 
+body {
+  font-family: "Roboto" background-color gray; }
+
+.card {
+  background-color: aliceblue;
+  font-family: "Roboto";
+  margin: 9px; }
+  .card__card-body {
+    text-align: center;
+    color: white;
+    background-color: #1AB4B2;
+    padding: 11px;
+    font-family: "Roboto"; }
+  .card__card-body--q {
+    background-color: #1C2326;
+    padding: 10px;
+    text-align: center;
+    color: #F3F3F3;
+    font-family: "Roboto"; }
+  .card__card-body--c {
+    color: #22B8B3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem; }
+  .card__card-body--d {
+    margin: 10px; }
+
 .sidenav {
   background-color: black;
   position: fixed;
@@ -27,6 +54,27 @@ body {
   z-index: 1;
   top: 0;
   left: 0; }
+
+.sidenav__list {
+  list-style: none;
+  padding: 0; }
+
+.sidenav__item {
+  text-align: right;
+  border-bottom: darkgray solid 1px; }
+  .sidenav__item--link {
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 1rem;
+    color: white;
+    background-color: #2E3639; }
+  .sidenav__item--link:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #24AEAE; }
+
+.sidenav__active {
+  background-color: #24AEAE; }
 
 .site {
   margin-left: 250px; }
