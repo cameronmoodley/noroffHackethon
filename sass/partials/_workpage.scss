@@ -1,0 +1,12 @@
+#workpageBody{
+    background-color: grey;
+}
+
+.workpage{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    &--carousel{
+        border-right: 1px solid lightgrey;
+    }
+}
