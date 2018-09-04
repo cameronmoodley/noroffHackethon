@@ -22,7 +22,7 @@ gulp.task('livereload', function (){
 });
 
 gulp.task('watch', function () {
-    gulp.watch('./sass/**/*.scss', ['sass', 'livereload']);
+  gulp.watch('./sass/**/*.scss', ['sass']);
   gulp.watch('./public/**/*', ['livereload']);
 });
 
