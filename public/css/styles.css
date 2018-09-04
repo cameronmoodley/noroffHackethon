@@ -7,6 +7,17 @@ body {
 .red {
   background-color: blue; }
 
+@media screen and (max-width: 767px) {
+  .workpage--carousel, .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--related {
+    border: none !important;
+    margin: 20px; } }
+
 #workpageBody {
   background-color: grey; }
 
@@ -100,7 +111,7 @@ body {
   .sidenav__hover:hover {
     color: white;
     text-decoration: none; }
-  .sidenavsidenav__paddingTop {
+  .sidenav__paddingTop {
     padding-top: 3rem; }
 
 .site {
