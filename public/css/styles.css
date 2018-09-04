@@ -1,11 +1,21 @@
 body {
   font-family: 'Roboto', sans-serif; }
-<<<<<<< HEAD
 
 body {
   font-family: 'Roboto', sans-serif; }
 
 .red {
   background-color: blue; }
-=======
->>>>>>> 19f0c34bd7d23f46c674062c1dd5e346825de224
+
+.sidenav {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+
+.site {
+  margin-left: 240px;
+  height: 5000px; }
