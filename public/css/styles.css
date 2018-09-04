@@ -26,13 +26,17 @@ body {
   .workpage--features__content {
     font-size: 10px; }
 
+.btn-success {
+  background-color: #1AB4B2 !important;
+  border-color: white !important; }
+
 body {
   font-family: "Roboto" background-color gray; }
 
 .card {
   background-color: aliceblue;
   font-family: "Roboto";
-  margin: 9px; }
+  margin: 5px; }
   .card__card-body {
     text-align: center;
     color: white;
@@ -51,7 +55,11 @@ body {
     text-align: center;
     font-size: 1rem; }
   .card__card-body--d {
-    margin: 10px; }
+    margin: 20px; }
+
+@media (max-width: 767px) {
+  .card {
+    padding-right: 45px; } }
 
 .sidenav {
   background-color: #232B2E;
@@ -94,48 +102,6 @@ body {
     text-decoration: none; }
   .sidenavsidenav__paddingTop {
     padding-top: 3rem; }
-
-.sidenav__list {
-  list-style: none;
-  padding: 0; }
-
-.sidenav__item {
-  text-align: right;
-  border-bottom: darkgray solid 1px; }
-  .sidenav__item--link {
-    text-decoration: none;
-    display: block;
-    padding: 1.5rem 1rem;
-    color: white;
-    background-color: #2E3639; }
-  .sidenav__item--link:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #24AEAE; }
-
-.sidenav__active {
-  background-color: #24AEAE; }
-
-.sidenav__list {
-  list-style: none;
-  padding: 0; }
-
-.sidenav__item {
-  text-align: right;
-  border-bottom: darkgray solid 1px; }
-  .sidenav__item--link {
-    text-decoration: none;
-    display: block;
-    padding: 1.5rem 1rem;
-    color: white;
-    background-color: #2E3639; }
-  .sidenav__item--link:hover {
-    text-decoration: none;
-    color: white;
-    background-color: #24AEAE; }
-
-.sidenav__active {
-  background-color: #24AEAE; }
 
 .site {
   margin-left: 250px; }
