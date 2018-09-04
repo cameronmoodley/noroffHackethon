@@ -1,0 +1,40 @@
+$fontFam: 'Roboto';
+$cardcol: #22B8B3;
+$cardbacol: #1C2326;
+$colcol: #F3F3F3;
+
+body{
+    font-family: $fontFam
+    background-color gray;
+    
+}
+.card{
+    background-color: aliceblue;
+    font-family: $fontFam;
+    
+    &__card-body {
+        text-align: center;
+       color:white;
+       background-color: $cardcol;
+       padding: 11px;
+       font-family: $fontFam;
+    }
+    &__card-body--q{
+        background-color: $cardbacol;
+        padding: 10px;
+        text-align: center;
+        color: $colcol;
+        font-family: $fontFam;
+       
+    }
+    &__card-body--c{
+        color: $cardcol;
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+       
+    }
+
+}
+
+
