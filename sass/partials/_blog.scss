@@ -10,10 +10,14 @@ body{
     background-color gray;
     
 }
+
+
 .card{
     background-color: aliceblue;
     font-family: $fontFam;
-    margin: 9px;
+    margin: 5px;
+   
+    
     
     &__card-body {
         text-align: center;
@@ -38,10 +42,17 @@ body{
        
     }
     &__card-body--d{
-        margin: 10px;
+        margin: 20px;
+        
         
     } 
 
+}
+
+@media (max-width: 767px) {
+    .card{
+        padding-right: 45px;
+    }
 }
 
 
