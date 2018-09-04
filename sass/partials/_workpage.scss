@@ -19,4 +19,16 @@
             }
         }
     }
+    &--related{
+        border-right: 1px solid lightgray;
+        &__image{
+            width: 160px;
+            height: 50%;
+        }
+    }
+    &--features{
+        &__content{
+            font-size: 10px;
+        }
+    }
 }

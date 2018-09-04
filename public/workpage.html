@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Work page</title>
 </head>
 <body id="workpageBody">
+    <!-- side menu -->
     <div class="[ workpageContainer ][ container ]">
         <div class="[ sidebar ][ col-sm-2 ]">
                 <div id="mySidenav" class="sidenav">
@@ -45,6 +47,7 @@
                     </div>      
                 </div>
             </div>
+            <!-- work page Project information -->
             <div class="[ workpage--info ][ col-sm-5 ]">
                 <h3 class="[ workpage--info__title ]">Project info</h3>
                 <p class="[ workpage--info__content ]"><span class="[ glyphicon glyphicon-user ]"></span> premiumlayers</p><hr>
@@ -67,6 +70,7 @@
                     </p>
                 </div>
             </div>
+            <!-- work page tag labels -->
             <div class="[ workpage--project ][ col-sm-5 ]">
                 <div class="[ workspace--project__tags ]">
                     <h3>Tags</h3>
@@ -76,31 +80,72 @@
                     <span class="[ label label-default ]">php</span>
                     <span class="[ label label-default ]">graphic</span>
                 </div>
+                <!-- work page image gallery -->
                 <div class="[ workpage--project__gallery ]">
                     <h3>Project gallery</h3>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel1.jpg" alt="Image 1">
+                        <img class="[ img-responsive ]" src="Images/work page/carousel1.jpg" alt="Image">
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel2.jpg" alt="Image 1">
+                        <img class="[ img-responsive ]" src="Images/work page/carousel2.jpg" alt="Image">
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel3.jpg" alt="Image 1">
+                        <img class="[ img-responsive ]" src="Images/work page/carousel3.jpg" alt="Image">
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel4.jpg" alt="Image 1">
+                        <img class="[ img-responsive ]" src="Images/work page/carousel4.jpg" alt="Image">
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel2.jpg" alt="Image 1">
+                        <img class="[ img-responsive ]" src="Images/work page/carousel2.jpg" alt="Image">
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel4.jpg" alt="Image 1">
+                        <img class="[ img-responsive ]" src="Images/work page/carousel4.jpg" alt="Image">
                     </div>
+                </div>
+            </div>
+            <!-- related project images -->
+            <div class="[ workpage--related ][ col-sm-7 ]">
+                <br><h3 class="[ workpage--related__title ]">Related Projects</h3>
+                <div class="[ workpage--related__img ]">
+                    <a href="Images/work page/related1.jpg" data-fancybox="images" data-width="852" data-height="480" data-caption="Project 1">
+                        <img class="[ workpage--related__image ]" src="Images/work page/related1.jpg" />
+                    </a>
+                    <a href="Images/work page/related2.jpg" data-fancybox="images" data-width="852" data-height="480" data-caption="Project 2">
+                        <img class="workpage--related__image" src="Images/work page/related2.jpg" />
+                    </a>
+                    <a href="Images/work page/related3.jpg" data-fancybox="images" data-width="852" data-height="480" data-caption="Project 3">
+                        <img class="[ workpage--related__image ]" src="Images/work page/related3.jpg" />
+                    </a>
+                </div>
+            </div>
+            <!-- Project features -->
+            <div class="[ workpage--features ][ col-sm-5 ]">
+                <h3 class="[ workpage--features__title ]">Project features</h3>
+                <div class="[ workpage--features__content ]">
+                    <p><span class="[ glyphicon glyphicon-ok ]"></span> Responsive layout</p>
+                    <p><span class="[ glyphicon glyphicon-ok ]"></span> Glyphicon icons</p>
+                    <p><span class="[ glyphicon glyphicon-ok ]"></span> Clean and commented code</p>
+                    <p><span class="[ glyphicon glyphicon-ok ]"></span> Pixel perfect design</p>
+                    <p><span class="[ glyphicon glyphicon-ok ]"></span> Not customizable</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+        $('[data-fancybox="images"]').fancybox({
+            afterLoad : function(instance, current) {
+                var pixelRatio = window.devicePixelRatio || 1;
+                if ( pixelRatio > 1 ) {
+                    current.width  = current.width  / pixelRatio;
+                    current.height = current.height / pixelRatio;
+                }
+            }
+        });
+    </script>
+    <!-- END OF THE INTERNET -->
 </body>
 </html>
