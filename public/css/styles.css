@@ -7,26 +7,26 @@ body {
 .red {
   background-color: blue; }
 
-body {
-  font-family: "Roboto" background-color gray; }
+#workpageBody {
+  background-color: grey; }
 
-.card {
-  background-color: aliceblue;
-  font-family: "Roboto"; }
-  .card__card-body {
-    text-align: center;
-    color: white;
-    background-color: #22B8B3;
-    padding: 11px;
-    font-family: "Roboto"; }
-  .card__card-body--q {
-    background-color: #1C2326;
-    padding: 10px;
-    text-align: center;
-    color: #F3F3F3;
-    font-family: "Roboto"; }
-  .card__card-body--c {
-    color: #22B8B3;
-    padding: 10px;
-    text-align: center;
-    font-size: 1rem; }
+.workpage {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: white; }
+  .workpage--carousel, .workpage--text {
+    border-right: 1px solid lightgrey; }
+  .workpage--project__gallery img {
+    margin: 5px; }
+
+.sidenav {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+
+.site {
+  margin-left: 250px; }

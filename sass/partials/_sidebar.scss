@@ -1,0 +1,41 @@
+.sidenav {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.sidenav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav__item {
+  text-align: right;
+  border-bottom: darkgray solid 1px;
+
+  &--link {
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 1rem;
+    color: white;
+    background-color: #2E3639;
+  }
+
+  &--link:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #24AEAE;
+  }
+}
+
+.sidenav__active {
+  background-color: #24AEAE;
+}
+
+.site {
+  margin-left: 250px;
+}
