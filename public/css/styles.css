@@ -6,3 +6,27 @@ body {
 
 .red {
   background-color: blue; }
+
+body {
+  font-family: "Roboto" background-color gray; }
+
+.card {
+  background-color: aliceblue;
+  font-family: "Roboto"; }
+  .card__card-body {
+    text-align: center;
+    color: white;
+    background-color: #22B8B3;
+    padding: 11px;
+    font-family: "Roboto"; }
+  .card__card-body--q {
+    background-color: #1C2326;
+    padding: 10px;
+    text-align: center;
+    color: #F3F3F3;
+    font-family: "Roboto"; }
+  .card__card-body--c {
+    color: #22B8B3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem; }
