@@ -14,8 +14,10 @@ body {
   margin-top: 10px;
   padding: 20px;
   background-color: white; }
-  .workpage--carousel {
+  .workpage--carousel, .workpage--text {
     border-right: 1px solid lightgrey; }
+  .workpage--project__gallery img {
+    margin: 5px; }
 
 .sidenav {
   background-color: black;

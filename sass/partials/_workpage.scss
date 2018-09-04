@@ -9,4 +9,14 @@
     &--carousel{
         border-right: 1px solid lightgrey;
     }
+    &--text{
+        @extend .workpage--carousel;
+    }
+    &--project{
+        &__gallery{
+            & img{
+                margin: 5px;
+            }
+        }
+    }
 }
