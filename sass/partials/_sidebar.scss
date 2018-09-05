@@ -2,7 +2,7 @@
   position: fixed;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
   background-color: #232B2E;
   color: white;
   padding: 2px 12px;
@@ -14,9 +14,10 @@
   position: fixed;
   height: 100%;
   width: 250px;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
+  transition: 0.5s;
 
   &__closebtn {
     display: none;
@@ -99,22 +100,21 @@
 
   .sidenav {
     width: 0;
+    overflow-x: hidden;
 
-    &__menuImg {
-      display: none;
-    }
-
-    &__list {
-      display: none;
-    }
-
-    &__miniMenu {
-      display: none;
+    &__closebtn {
+      display: block;
     }
   }
 
   .site {
     margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .sidenav {
+    width: 250px !important;
   }
 }
 
