@@ -32,9 +32,15 @@ body {
   padding: 20px;
   background-color: white; }
   .workpage--carousel, .workpage--text {
-    border-right: 1px solid lightgrey; }
+    border-right: 1px solid lightgrey;
+    margin-bottom: 0; }
+  .workpage--info span {
+    color: #2daebe !important; }
   .workpage--project__gallery img {
     margin: 5px; }
+  .workpage--project__image {
+    height: 50px;
+    width: auto; }
   .workpage--related {
     border-right: 1px solid lightgray; }
     .workpage--related__image {

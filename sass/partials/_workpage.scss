@@ -32,6 +32,12 @@
     background-color: white;
     &--carousel{
         border-right: 1px solid lightgrey;
+        margin-bottom: 0;
+    }
+    &--info{
+        & span{
+            color: rgb(45, 174, 190) !important;
+        }
     }
     &--text{
         @extend .workpage--carousel;
@@ -41,6 +47,10 @@
             & img{
                 margin: 5px;
             }
+        }
+        &__image{
+            height: 50px;
+            width: auto;
         }
     }
     &--related{
