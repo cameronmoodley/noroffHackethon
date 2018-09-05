@@ -233,8 +233,7 @@ body {
   left: 0;
   transition: 0.5s; }
   .sidenav__closebtn {
-    display: none;
-    background-color: green; }
+    display: none; }
   .sidenav__list {
     list-style: none;
     padding: 0; }
@@ -261,6 +260,8 @@ body {
       font-size: 17px; }
     .sidenav__miniMenu--filter:hover {
       color: #24AEAE; }
+  .sidenav__icons {
+    padding-left: 5px; }
   .sidenav__grayTxt {
     color: gray; }
   .sidenav__hover:hover {
@@ -279,7 +280,10 @@ body {
     width: 0;
     overflow-x: hidden; }
     .sidenav__closebtn {
-      display: block; }
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0; }
   .site {
     margin-left: 0; } }
 
@@ -287,7 +291,7 @@ body {
   .sidenav {
     width: 250px !important; } }
 
-@media only screen and (max-height: 580px) {
+@media only screen and (max-height: 700px) {
   .sidenav__miniMenu {
     display: none; } }
 
@@ -444,6 +448,12 @@ i {
 .fa-home {
   font-size: 15px; }
 
-.col-sm-3 {
-  padding: 0;
-  margin-top: 0; }
+.col-sm-6 {
+  padding: 0; }
+
+.col-md-3 {
+  padding: 0; }
+
+@media only screen and (max-width: 767px) {
+  .indexImg {
+    margin-bottom: 10px; } }
