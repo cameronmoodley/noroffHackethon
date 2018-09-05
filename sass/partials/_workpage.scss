@@ -11,6 +11,48 @@
         &--related{
             border: none !important;
             margin: 20px;
+            &__image{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &--project{
+            &__gallery{
+                & img{
+                    margin: 5px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px){
+    .workpage{
+        &--carousel{
+            border: none !important;
+        }
+        &--related{
+            border: none !important;
+            &__image{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--text{
+            border: none !important;
+        }
+        &--project{
+            &__gallery{
+                & img{
+                    margin: 5px;
+                    width: 50%;
+                    height: auto;
+                }
+            }
         }
     }
 }
