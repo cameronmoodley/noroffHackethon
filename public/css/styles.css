@@ -344,16 +344,15 @@ body {
   height: 38px; }
 
 .overlay {
-  position: initial;
-  top: 45px;
-  left: 18px; }
+  padding-left: 7px; }
 
 .mainform {
   border: solid white 0.5px !important;
   background-color: white;
   height: 2px; }
   .mainform--information {
-    margin: 0; }
+    margin: 0;
+    padding-top: 40px; }
     .mainform--information__fonttypeH {
       font-weight: 100;
       color: slategray !important; }
@@ -371,14 +370,15 @@ body {
     height: 10px;
     margin: 0px; }
     .contexts--form__comment {
-      height: 93px !important;
-      border-radius: 0px !important; }
+      height: 95px !important;
+      border-radius: 0px; }
     .contexts--form__button {
+      padding-top: 5px;
       font-weight: 100;
       font-size: 10px;
       color: white !important;
-      height: 49px !important;
-      border-radius: 0px !important; }
+      height: 45px !important;
+      border-radius: 0px; }
 
 .input-container {
   display: -ms-flexbox;
@@ -404,21 +404,32 @@ body {
 .input--field:focus {
   border: 2px solid dodgerblue; }
 
-.googlemap {
-  display: none; }
+.displays {
+  margin: 0; }
+  .displays--googlemap {
+    margin: 0; }
+    .displays--googlemap__show {
+      display: none; }
 
 /*BREAKPOINT*/
 @media (min-width: 767px) {
+  .containcontainer {
+    padding: 0px; }
   .mainform {
     border: solid lightslategray 0.5px;
     background-color: white;
-    height: 420px; }
+    height: 450px;
+    padding-right: 15px; }
   .overlay {
     position: absolute;
     top: 10px;
     left: 18px; }
-  .googlemap {
-    display: block; } }
+  .displays {
+    margin: 0; }
+    .displays--googlemap {
+      margin: 0; }
+      .displays--googlemap__show {
+        display: block; } }
 
 .info {
   position: absolute;
