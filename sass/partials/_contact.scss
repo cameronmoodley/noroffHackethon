@@ -5,22 +5,8 @@
     height: 38px;
 }
 
-.fonttype{
-    font-weight: normal;
-    color: lightslategray !important;
-
-}
-
-.fonttypeH{
-    font-weight:100;
-    color: slategray !important;
-
-
-    
-}
-
 .overlay{
-    position: absolute;
+    position: initial;
     top: 45px;
     left: 18px;
 }
@@ -28,37 +14,53 @@
 .mainform{
     border: solid lightslategray 0.5px;
     background-color: white;
+    &--information{
+        margin: 0;
+        &__fonttypeH{
+        font-weight:100;
+        color: slategray !important;
+        } 
+    &__fonttypeB{
+        font-weight:100;
+        color: slategray !important;
+        }      
+    &__fonttype{
+        font-weight: normal;
+        color: lightslategray !important;
+        }
+    }
+    
 }
 
-.form{
-    margin-left: 0px;
-}
 
 .contexts{
     padding: 11px;
+    &--form{
+        margin: 0;
+        &__comment{
+            height: 400px;
+        }
+        &__button{
+            font-weight:100;
+            color: white !important;
+        }
+    }
 }
 
-.icon {
-    padding: 10px;
-    background: dodgerblue;
-    color: white;
-    min-width: 50px;
-    text-align: center;
-}
 .input-container {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     width: 100%;
     margin-bottom: 15px;
-    background-color: red;
-}
-
-.icon {
-    padding: 8px;
-    background: dodgerblue;
-    color: white;
-    min-width: 50px;
-    text-align: center;
+    &__icon{
+            padding: 13px;
+        padding-top: 16px;
+        background: white;
+        color: #1AB4B2;
+        min-width: 50px;
+        text-align: center;
+        border: solid lightgray 0.2px;
+    }
 }
 
 .input--field {
@@ -71,29 +73,9 @@
     border: 2px solid dodgerblue;
 }
 
-.input-container {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.icon {
-    padding: 13px;
-    padding-top: 16px;
-    background: white;
-    color: #1AB4B2;
-    min-width: 50px;
-    text-align: center;
-    border: solid lightgray 0.2px;
-}
-.fa-envelope{
-    font-size: 20px;
-    padding-top:12px !important;
-    margin-top: 0px;
-}
-
-
+.googlemap{
+        display: none;
+    }
 @media (min-width: 576px) {
     
     .overlay{
@@ -101,5 +83,7 @@
     top: 10px;
     left: 18px;
 }
-    
+    .googlemap{
+        display: block;
+    }
 }
