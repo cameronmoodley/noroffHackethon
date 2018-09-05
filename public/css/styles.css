@@ -16,7 +16,31 @@ body {
     margin: 10px; }
   .workpage--related {
     border: none !important;
-    margin: 20px; } }
+    margin: 20px; }
+    .workpage--related__image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; }
+  .workpage--project__gallery img {
+    margin: 5px;
+    width: 100%;
+    height: auto; } }
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .workpage--carousel, .workpage--text {
+    border: none !important; }
+  .workpage--related {
+    border: none !important; }
+    .workpage--related__image {
+      width: 100%;
+      height: auto; }
+  .workpage--text {
+    border: none !important; }
+  .workpage--project__gallery img {
+    margin: 5px;
+    width: 50%;
+    height: auto; } }
 
 #workpageBody {
   background-color: grey; }
@@ -53,12 +77,44 @@ body {
   .skillsection__services {
     padding-top: 40px !important; } }
 
+@media only screen and (max-width: 846px) {
+  .skillsection__services {
+    padding-top: 70px !important; } }
+
 @media only screen and (max-width: 768px) {
+  .skillsection__services {
+    padding-top: 0px !important; }
   .whosection {
     width: 97% !important; }
+    .whosection__ourstaff {
+      margin: 0% 10%; }
+      .whosection__ourstaff--image {
+        padding-bottom: 5rem;
+        width: 100% !important; }
+  .hoverlay {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative;
+    margin: 0px;
+    display: inline-block; }
+    .hoverlay__info {
+      background-color: rgba(34, 184, 179, 0.8);
+      width: 100% !important;
+      height: 89% !important;
+      position: absolute;
+      top: 0px;
+      left: 1px;
+      display: none; }
+      .hoverlay__info--textcontainer {
+        padding-top: 4rem;
+        text-align: center;
+        color: #f3f3f3;
+        font-size: 1rem; }
+      .hoverlay__info--headline {
+        margin: 0; }
   .skillsection {
     width: 97% !important;
-    margin-left: 1.3%; }
+    margin-left: 2%; }
   .grey-margin {
     padding: 0px !important; }
   .skillsection__services {
@@ -71,29 +127,21 @@ body {
 .contentcontainer {
   padding: 0; }
 
-.grid:before, .grid:after {
-  content: '';
-  display: table; }
+/*.grid {
+    @include clearfix;
+    .item {
+        float: left;
+        //@include imagegrid(3, 3%);
+    }
+    img {
+        display: block;
+        max-width: 100%;
 
-.grid:after {
-  clear: both; }
-
-.grid .item {
-  float: left;
-  width: 30.33333%; }
-  .grid .item:nth-child(n) {
-    margin-right: 3%;
-    margin-bottom: 3%; }
-  .grid .item:nth-child(3n) {
-    margin-right: 0;
-    margin-bottom: 0; }
-
-.grid img {
-  display: block;
-  max-width: 100%; }
-  .grid img:hover {
-    opacity: 1; }
-
+        &:hover {
+            opacity: 1;
+        }
+    }
+}*/
 h3 {
   font-weight: 100; }
 
@@ -116,21 +164,38 @@ h3 {
     border-color: #bfbfbf; }
   .whosection__image {
     width: 100%; }
+  .whosection__row {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .whosection__ourstaff {
+    margin-bottom: -10px;
+    padding-right: 0px;
+    padding-left: 0; }
+    .whosection__ourstaff--image {
+      width: 93%;
+      height: 80%; }
 
 .hoverlay {
-  width: 100%;
-  height: 100%;
+  width: 93%;
+  height: 80%;
   position: relative;
   margin: 0px;
   display: inline-block; }
   .hoverlay__info {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 230px;
+    background-color: rgba(34, 184, 179, 0.8);
+    width: 93%;
+    height: 80%;
     position: absolute;
     top: 0px;
     left: 1px;
     display: none; }
+    .hoverlay__info--textcontainer {
+      padding-top: 4rem;
+      text-align: center;
+      color: #f3f3f3;
+      font-size: 1rem; }
+    .hoverlay__info--headline {
+      margin: 0; }
 
 .skillsection {
   font-size: 12px;
@@ -197,7 +262,10 @@ h3 {
   .skillsection__services {
     padding-top: 25px; }
     .skillsection__services--list {
-      padding-left: 15px; }
+      padding-left: 15px;
+      margin-bottom: 5px; }
+    .skillsection__services--item {
+      margin-bottom: 5px; }
 
 body {
   font-family: "Roboto" background-color gray; }
@@ -223,8 +291,6 @@ body {
     padding: 10px;
     text-align: center;
     font-size: 1rem; }
-  .card__card-body--d {
-    margin: 20px; }
 
 @media (max-width: 767px) {
   .card {
@@ -250,8 +316,7 @@ body {
   left: 0;
   transition: 0.5s; }
   .sidenav__closebtn {
-    display: none;
-    background-color: green; }
+    display: none; }
   .sidenav__list {
     list-style: none;
     padding: 0; }
@@ -278,6 +343,8 @@ body {
       font-size: 17px; }
     .sidenav__miniMenu--filter:hover {
       color: #24AEAE; }
+  .sidenav__icons {
+    padding-left: 5px; }
   .sidenav__grayTxt {
     color: gray; }
   .sidenav__hover:hover {
@@ -296,7 +363,10 @@ body {
     width: 0;
     overflow-x: hidden; }
     .sidenav__closebtn {
-      display: block; }
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0; }
   .site {
     margin-left: 0; } }
 
@@ -304,7 +374,7 @@ body {
   .sidenav {
     width: 250px !important; } }
 
-@media only screen and (max-height: 580px) {
+@media only screen and (max-height: 700px) {
   .sidenav__miniMenu {
     display: none; } }
 
@@ -334,8 +404,29 @@ body {
   .li-om__heding {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-.tag-it {
-  list-style-type: none; }
+.tag-it li {
+  font-size: 15px;
+  padding: 10px;
+  margin: 15px;
+  background-color: transparent;
+  color: lightgrey;
+  border: 1px solid lightgrey;
+  font-family: 'Roboto'; }
+
+.tag-it li:hover {
+  font-size: 15px;
+  padding: 10px;
+  margin: 15px;
+  background-color: #22B8B3;
+  color: #1C2326;
+  border: 1px solid lightgrey;
+  font-family: 'Roboto'; }
+
+.cal-itesm-tex {
+  color: #B3B7B8; }
+
+.cal-itesm-tex:hover {
+  color: black; }
 
 .btn-success {
   background-color: #1AB4B2 !important;
@@ -469,9 +560,30 @@ body {
 .fa-home {
   font-size: 15px; }
 
-.col-sm-3 {
-  padding: 0;
-  margin-top: 0; }
+.col-sm-6 {
+  padding: 0; }
+
+.col-md-3 {
+  padding: 0; }
+
+@media only screen and (max-width: 767px) {
+  .indexImg {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 767px) {
+  .services {
+    margin: 0 !important;
+    padding: 0 !important; }
+    .services--offer {
+      border-right: none !important; }
+    .services--project__img img {
+      margin: 10px 0 !important;
+      width: 100% !important;
+      height: auto;
+      border: 1px solid grey; }
+    .services--getintouch__btn {
+      width: 100%;
+      margin: 10px 0 !important; } }
 
 #serviceBody {
   background-color: grey; }
