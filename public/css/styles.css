@@ -320,8 +320,12 @@ body {
   font-weight: 100;
   color: slategray !important; }
 
+.fonttypeW {
+  font-weight: 100;
+  color: white !important; }
+
 .overlay {
-  position: absolute;
+  position: initial;
   top: 45px;
   left: 18px; }
 
@@ -329,33 +333,23 @@ body {
   border: solid lightslategray 0.5px;
   background-color: white; }
 
-.form {
-  margin-left: 0px; }
-
 .contexts {
   padding: 11px; }
-
-.icon {
-  padding: 10px;
-  background: dodgerblue;
-  color: white;
-  min-width: 50px;
-  text-align: center; }
 
 .input-container {
   display: -ms-flexbox;
   /* IE10 */
   display: flex;
   width: 100%;
-  margin-bottom: 15px;
-  background-color: red; }
-
-.icon {
-  padding: 8px;
-  background: dodgerblue;
-  color: white;
-  min-width: 50px;
-  text-align: center; }
+  margin-bottom: 15px; }
+  .input-container__icon {
+    padding: 13px;
+    padding-top: 16px;
+    background: white;
+    color: #1AB4B2;
+    min-width: 50px;
+    text-align: center;
+    border: solid lightgray 0.2px; }
 
 .input--field {
   width: 100%;
@@ -365,29 +359,13 @@ body {
 .input--field:focus {
   border: 2px solid dodgerblue; }
 
-.input-container {
-  display: -ms-flexbox;
-  /* IE10 */
-  display: flex;
-  width: 100%;
-  margin-bottom: 5px; }
-
-.icon {
-  padding: 13px;
-  padding-top: 16px;
-  background: white;
-  color: #1AB4B2;
-  min-width: 50px;
-  text-align: center;
-  border: solid lightgray 0.2px; }
-
-.fa-envelope {
-  font-size: 20px;
-  padding-top: 12px !important;
-  margin-top: 0px; }
+.googlemap {
+  display: none; }
 
 @media (min-width: 576px) {
   .overlay {
     position: absolute;
     top: 10px;
-    left: 18px; } }
+    left: 18px; }
+  .googlemap {
+    display: block; } }

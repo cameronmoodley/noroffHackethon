@@ -47,69 +47,62 @@
                  <div class="[ col-sm-12 ]">
                     <div class="mapouter">
                         <div class="gmap_canvas">
-                        <iframe width="100%" height="500px" 
+                        <iframe class="[ googlemap ]" width="100%" height="500px" 
                                 id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                         </iframe>
                         </div>
                      </div>
                      <div class="[ overlay ]">
-                     
-                         
                     <div class="col-sm-6 [ mainform ]">
-                         <div class="col-xl-8 offset-xl-2 py-5">
-                                <h4 class="[ fonttypeH ]">Get in touch with us </h4>
-                                    <p class="[ fonttype ]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                         <div class="col-xl-8 offset-xl-2 py-5 [ mainform--information ]">
+                                <h4 class="[ mainform--information__fonttypeH ]">Get in touch with us </h4>
+                                    <p class="[ mainform--information__fonttype ]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
                                     </p>
                              <hr>
-                             <h4 class="[ fonttypeH ]">Send us a message</h4>
+                             <h4 class="[ mainform--information__fonttypeB ]">Send us a message</h4>
                              <hr>
-                       <form id="contact-form" method="post" action="contact.php" role="form">
+                       <form id="contact-form" action="" role="form">
                             <div class="messages"></div>
-
                             <div class="controls">
-
                                 <div class="row">
                                     <div class="row [ contexts ]">
                                         <div class=" col-sm-6">
-                                        
                                             <div class="[ input ][ input-container ]">
-                                                <i class="[ fa fa-user icon ]"></i>
+                                                <i class="[ fa fa-user ][ input-container__icon ]"></i>
                                                 <input id="form_name" type="text" name="name" class="form-control[ input--field ]" placeholder="Name" required="required" data-error="Firstname is required.">
                                                     <div class="help-block with-errors"></div>
                                             </div>
-                                            
                                             <div class="[ input ][ input-container ]">
-                                                <i class="[ far fa-envelope icon ]"></i>
+                                                <i class="[ far fa-envelope ][ input-container__icon ]"></i>
                                                 <input id="form_email" type="email" name="email" class="form-control[ input--field ]" placeholder="e-mail" required="required" data-error="Valid email is required.">
                                                     <div class="help-block with-errors">
                                                     </div>
                                             </div>
-                                            
                                             <div class="form-group[ input ][ input-container ]">
-                                                <i class="[ fas fa-link icon ]"></i>
-                                                <input id="form_email" type="email" name="email" class="form-control[ input--field ]" placeholder="website" required="required" data-error="Valid email is required.">
+                                                <i class="[ fas fa-link ][ input-container__icon ]"></i>
+                                                <input id="form_url" type="url" name="url" class="form-control[ input--field ]" placeholder="website" required="required" data-error="Valid url is required.">
                                                     <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 [ form ]">
-                                       <div>
-                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                            <div class="help-block with-errors">
+                                        <div class="col-md-6 [ contexts--form ]">
+                                           <div class="[ contexts--form__comment ]">
+                                                <textarea id="form_message" name="message" class="form-control " placeholder="Message" rows="4" required="required" data-error="Please, leave us a message.">
+                                                </textarea>
+                                                <div class="help-block with-errors">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <input type="submit" class="[ btn btn-success ][ submit ][ fonttypeW ]" value="SEND NOW!">
                                             </div>
                                         </div>
-                                        <div>
-                                            <input type="submit" class="[ btn btn-success btn-send ][ submit ]" value="SEND NOW!">
-                                        </div>
-                                    </div>
                                     </div>  
                                 </div>
                             </div>
                         </form>
                      </div>
                 </div>  
-                     
-                     </div>
+                </div>
   
             </div>
         </div>
