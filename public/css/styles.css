@@ -32,9 +32,15 @@ body {
   padding: 20px;
   background-color: white; }
   .workpage--carousel, .workpage--text {
-    border-right: 1px solid lightgrey; }
+    border-right: 1px solid lightgrey;
+    margin-bottom: 0; }
+  .workpage--info span {
+    color: #2daebe !important; }
   .workpage--project__gallery img {
     margin: 5px; }
+  .workpage--project__image {
+    height: 50px;
+    width: auto; }
   .workpage--related {
     border-right: 1px solid lightgray; }
     .workpage--related__image {
@@ -62,33 +68,8 @@ body {
   margin: 0;
   padding: 0; }
 
-<<<<<<< HEAD
-.workpage {
-  width: 100%;
-  margin-top: 10px;
-  padding: 20px;
-  background-color: white; }
-  .workpage--carousel, .workpage--text {
-    border-right: 1px solid lightgrey;
-    margin-bottom: 0; }
-  .workpage--info span {
-    color: #2daebe !important; }
-  .workpage--project__gallery img {
-    margin: 5px; }
-  .workpage--project__image {
-    height: 50px;
-    width: auto; }
-  .workpage--related {
-    border-right: 1px solid lightgray; }
-    .workpage--related__image {
-      width: 160px;
-      height: 50%; }
-  .workpage--features__content {
-    font-size: 10px; }
-=======
 .contentcontainer {
   padding: 0; }
->>>>>>> c608bd5c2b3ae135532eb122a34dd0f2ca4d64c1
 
 .grid:before, .grid:after {
   content: '';
@@ -99,7 +80,7 @@ body {
 
 .grid .item {
   float: left;
-  width: 31.33333%; }
+  width: 30.33333%; }
   .grid .item:nth-child(n) {
     margin-right: 3%;
     margin-bottom: 3%; }
@@ -134,16 +115,6 @@ h3 {
   .whosection__image {
     width: 100%; }
 
-<<<<<<< HEAD
-.btn-success {
-  background-color: #1AB4B2 !important;
-  border-color: white !important; }
-
-.hed {
-  background-color: #B3B7B8; }
-  .hed__elemet--tex {
-    text-align: center; }
-=======
 .skillsection {
   font-size: 12px;
   background-color: #f3f3f3;
@@ -210,7 +181,6 @@ h3 {
     padding-top: 25px; }
     .skillsection__services--list {
       padding-left: 15px; }
-<<<<<<< HEAD
 
 .btn-success {
   background-color: #1AB4B2 !important;
@@ -295,6 +265,8 @@ body {
 .btn-success {
   background-color: #1AB4B2 !important;
   border-color: white !important; }
-=======
->>>>>>> 8191d77d698c1edafcc44df1a3b02cc9bd1ce24a
->>>>>>> d369eeaa7484255f11a81e1a4f740f92e61effd7
+
+.hed {
+  background-color: #B3B7B8; }
+  .hed__elemet--tex {
+    text-align: center; }

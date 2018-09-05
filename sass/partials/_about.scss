@@ -19,7 +19,7 @@ $roundness: 20px 0 20px 0;
 }
 
 @mixin imagegrid($qty, $margin) {
-  width: ((100% - (($qty - 1) * $margin))/$qty);
+  width: ((97% - (($qty - 1) * $margin))/$qty);
   &:nth-child(n) {
     margin-right: $margin;
     margin-bottom: $margin;
