@@ -14,10 +14,28 @@
 .fonttypeH{
     font-weight:100;
     color: slategray !important;
+
+
+    
+}
+
+.overlay{
+    position: absolute;
+    top: 45px;
+    left: 18px;
+}
+
+.mainform{
+    border: solid lightslategray 0.5px;
+    background-color: white;
 }
 
 .form{
     margin-left: 0px;
+}
+
+.contexts{
+    padding: 11px;
 }
 
 .icon {
@@ -73,4 +91,15 @@
     font-size: 20px;
     padding-top:12px !important;
     margin-top: 0px;
+}
+
+
+@media (min-width: 576px) {
+    
+    .overlay{
+    position: absolute;
+    top: 10px;
+    left: 18px;
+}
+    
 }

@@ -117,6 +117,20 @@ h3 {
   .whosection__image {
     width: 100%; }
 
+.overlay {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 20px;
+  display: inline-block; }
+  .overlay__info {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 1px; }
+
 .skillsection {
   font-size: 12px;
   background-color: #f3f3f3;
@@ -215,6 +229,16 @@ body {
   .card {
     padding-right: 45px; } }
 
+.hamburgerMenu {
+  position: fixed;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #232B2E;
+  color: white;
+  padding: 2px 12px;
+  display: none; }
+
 .sidenav {
   background-color: #232B2E;
   position: fixed;
@@ -222,7 +246,11 @@ body {
   width: 250px;
   z-index: 1;
   top: 0;
-  left: 0; }
+  left: 0;
+  transition: 0.5s; }
+  .sidenav__closebtn {
+    display: none;
+    background-color: green; }
   .sidenav__list {
     list-style: none;
     padding: 0; }
@@ -260,15 +288,39 @@ body {
 .site {
   margin-left: 250px; }
 
-body {
-  background-color: #B3B7B8; }
+.col-xs-3 {
+  padding: 0;
+  margin-top: 0; }
+
+@media only screen and (max-width: 768px) {
+  .hamburgerMenu {
+    display: inline; }
+  .sidenav {
+    width: 0;
+    overflow-x: hidden; }
+    .sidenav__closebtn {
+      display: block; }
+  .site {
+    margin-left: 0; } }
+
+@media only screen and (min-width: 769px) {
+  .sidenav {
+    width: 250px !important; } }
+
+@media only screen and (max-height: 580px) {
+  .sidenav__miniMenu {
+    display: none; } }
 
 .hed {
   background-color: #F3F3F3;
   margin: 15px; }
+  .hed__elemet--slider {
+    background-color: noen; }
+  .hed__elemet--heding {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
   .hed__elemet--text {
-    max-width: 30rem;
-    padding: none; }
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 .btn-success {
   background-color: #1AB4B2 !important;
@@ -284,8 +336,20 @@ body {
   font-weight: 100;
   color: slategray !important; }
 
+.overlay {
+  position: absolute;
+  top: 45px;
+  left: 18px; }
+
+.mainform {
+  border: solid lightslategray 0.5px;
+  background-color: white; }
+
 .form {
   margin-left: 0px; }
+
+.contexts {
+  padding: 11px; }
 
 .icon {
   padding: 10px;
@@ -337,3 +401,48 @@ body {
   font-size: 20px;
   padding-top: 12px !important;
   margin-top: 0px; }
+
+@media (min-width: 576px) {
+  .overlay {
+    position: absolute;
+    top: 10px;
+    left: 18px; } }
+
+#serviceBody {
+  background-color: grey; }
+
+.services {
+  background-color: white;
+  margin: 5px; }
+  .services--header {
+    text-align: center; }
+  .services--info {
+    text-align: center;
+    margin-bottom: 35px; }
+    .services--info--text {
+      padding: 30px; }
+  .services--project__title {
+    text-align: center; }
+  .services--project__img img {
+    width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    margin: 15px; }
+  .services--offer {
+    border-right: 1px solid lightgrey;
+    text-align: center; }
+  .services--getintouch__title {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 0; }
+  .services--getintouch__btn {
+    background-image: url("../Images/services/contact.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid grey;
+    width: 100%;
+    height: 150px;
+    margin: 25px; }
+    .services--getintouch__btn:hover {
+      border: 2px solid black; }

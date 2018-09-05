@@ -1,3 +1,14 @@
+.hamburgerMenu {
+  position: fixed;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #232B2E;
+  color: white;
+  padding: 2px 12px;
+  display: none;
+}
+
 .sidenav {
   background-color: #232B2E;
   position: fixed;
@@ -6,6 +17,16 @@
   z-index: 1;
   top: 0;
   left: 0;
+  transition: 0.5s;
+
+  &__closebtn {
+    display: none;
+    background-color: green;
+  }
+
+  &__menuImg {
+
+  }
 
   &__list {
     list-style: none;
@@ -65,4 +86,43 @@
 
 .site {
   margin-left: 250px;
+}
+
+.col-xs-3 {
+  padding: 0;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburgerMenu {
+    display: inline;
+  }
+
+  .sidenav {
+    width: 0;
+    overflow-x: hidden;
+
+    &__closebtn {
+      display: block;
+    }
+  }
+
+  .site {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .sidenav {
+    width: 250px !important;
+  }
+}
+
+@media only screen and (max-height: 580px) {
+  .sidenav {
+
+    &__miniMenu {
+      display: none;
+    }
+  }
 }
