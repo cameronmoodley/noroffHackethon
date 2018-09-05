@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -19,7 +20,7 @@
       <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link ]">WORK</a></li>
       <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link ]">ABOUT</a></li>
       <li class="[ sidenav__item ]"><a href="blog.html" class="[ sidenav__item--link ]">BLOG</a></li>
-      <li class="[ sidenav__item ]"><a href="#" class="[ sidenav__item--link ]">SERVICES</a></li>
+      <li class="[ sidenav__item ]"><a href="services.html" class="[ sidenav__item--link ]">SERVICES</a></li>
       <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
     </ul>
     <div class="sidenav__miniMenu">
@@ -65,7 +66,16 @@
         </div>
       </div>
     </div>
+      <button class="[ info ]" type="button" onclick="openMenu()">
+        <i class="fas fa-info-circle"></i>
+      </button>
+      <div class="[ info__dropdown ]" id="dropdown">
+        <a class="[ info__dropdown--item ]" href="#"><i class="fas fa-phone"></i> 9930 1234 5679</a>
+        <a class="[ info__dropdown--item ]" href="#"><i class="fas fa-envelope"></i> Contact@domain.com</a>
+        <a class="[ info__dropdown--item ]" href="#"><i class="fas fa-home"></i> Street address example</a>
+      </div>
   </div>
+  <script src="script/index.js"></script>
   <script src="script/menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
