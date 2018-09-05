@@ -88,22 +88,34 @@
                 <div class="[ workpage--project__gallery ]">
                     <h3>Project gallery</h3>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel1.jpg" alt="Image">
+                        <a href="Images/work page/carousel1.jpg" data-fancybox="gallery" data-width="852" data-height="480" data-caption="Project gallery">
+                            <img class="[ workpage--project__image ]" src="Images/work page/carousel1.jpg" />
+                        </a>
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel2.jpg" alt="Image">
+                        <a href="Images/work page/carousel2.jpg" data-fancybox="gallery" data-width="852" data-height="480" data-caption="Project gallery">
+                            <img class="[ workpage--project__image ]" src="Images/work page/carousel2.jpg" />
+                        </a>
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel3.jpg" alt="Image">
+                        <a href="Images/work page/carousel3.jpg" data-fancybox="gallery" data-width="852" data-height="480" data-caption="Project gallery">
+                            <img class="[ workpage--project__image ]" src="Images/work page/carousel3.jpg" />
+                        </a>
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel4.jpg" alt="Image">
+                        <a href="Images/work page/carousel4.jpg" data-fancybox="gallery" data-width="852" data-height="480" data-caption="Project gallery">
+                            <img class="[ workpage--project__image ]" src="Images/work page/carousel4.jpg" />
+                        </a>
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel2.jpg" alt="Image">
+                        <a href="Images/work page/carousel1.jpg" data-fancybox="gallery" data-width="852" data-height="480" data-caption="Project gallery">
+                            <img class="[ workpage--project__image ]" src="Images/work page/carousel1.jpg" />
+                        </a>
                     </div>
                     <div class="[ col-sm-3 ]">
-                        <img class="[ img-responsive ]" src="Images/work page/carousel4.jpg" alt="Image">
+                        <a href="Images/work page/carousel3.jpg" data-fancybox="gallery" data-width="852" data-height="480" data-caption="Project gallery">
+                            <img class="[ workpage--project__image ]" src="Images/work page/carousel4.jpg" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -111,13 +123,13 @@
             <div class="[ workpage--related ][ col-sm-7 ]">
                 <br><h3 class="[ workpage--related__title ]">Related Projects</h3>
                 <div class="[ workpage--related__img ]">
-                    <a href="Images/work page/related1.jpg" data-fancybox="images" data-width="852" data-height="480" data-caption="Project 1">
+                    <a href="Images/work page/related1.jpg" data-fancybox="related" data-width="852" data-height="480" data-caption="Project 1">
                         <img class="[ workpage--related__image ]" src="Images/work page/related1.jpg" />
                     </a>
-                    <a href="Images/work page/related2.jpg" data-fancybox="images" data-width="852" data-height="480" data-caption="Project 2">
+                    <a href="Images/work page/related2.jpg" data-fancybox="related" data-width="852" data-height="480" data-caption="Project 2">
                         <img class="workpage--related__image" src="Images/work page/related2.jpg" />
                     </a>
-                    <a href="Images/work page/related3.jpg" data-fancybox="images" data-width="852" data-height="480" data-caption="Project 3">
+                    <a href="Images/work page/related3.jpg" data-fancybox="related" data-width="852" data-height="480" data-caption="Project 3">
                         <img class="[ workpage--related__image ]" src="Images/work page/related3.jpg" />
                     </a>
                 </div>
@@ -140,17 +152,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
-    <script type="text/javascript">
-        $('[data-fancybox="images"]').fancybox({
-            afterLoad : function(instance, current) {
-                var pixelRatio = window.devicePixelRatio || 1;
-                if ( pixelRatio > 1 ) {
-                    current.width  = current.width  / pixelRatio;
-                    current.height = current.height / pixelRatio;
-                }
-            }
-        });
-    </script>
     <!-- END OF THE INTERNET -->
 </body>
 </html>
