@@ -2,20 +2,27 @@ $fontFam: 'Roboto';
 $cardcol: #22B8B3;
 $cardbacol: #1C2326;
 $colcol: #F3F3F3;
+$bgcolor: #B3B7B8;
+$cardblu: #1AB4B2;
 
 body{
     font-family: $fontFam
     background-color gray;
     
 }
+
+
 .card{
     background-color: aliceblue;
     font-family: $fontFam;
+    margin: 5px;
+   
+    
     
     &__card-body {
         text-align: center;
        color:white;
-       background-color: $cardcol;
+       background-color: $cardblu;
        padding: 11px;
        font-family: $fontFam;
     }
@@ -34,7 +41,18 @@ body{
         font-size: 1rem;
        
     }
+    &__card-body--d{
+        margin: 20px;
+        
+        
+    } 
 
+}
+
+@media (max-width: 767px) {
+    .card{
+        padding-right: 45px;
+    }
 }
 
 

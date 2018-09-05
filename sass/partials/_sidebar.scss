@@ -1,39 +1,66 @@
 .sidenav {
-  background-color: black;
+  background-color: #232B2E;
   position: fixed;
   height: 100%;
   width: 250px;
   z-index: 1;
   top: 0;
   left: 0;
-}
 
-.sidenav__list {
-  list-style: none;
-  padding: 0;
-}
-
-.sidenav__item {
-  text-align: right;
-  border-bottom: darkgray solid 1px;
-
-  &--link {
-    text-decoration: none;
-    display: block;
-    padding: 1.5rem 1rem;
-    color: white;
-    background-color: #2E3639;
+  &__list {
+    list-style: none;
+    padding: 0;
   }
 
-  &--link:hover {
-    text-decoration: none;
-    color: white;
+  &__item {
+    text-align: right;
+    border-bottom: #232B2E solid 1px;
+
+    &--link {
+      text-decoration: none;
+      display: block;
+      padding: 1rem 2rem;
+      color: white;
+      background-color: #2E3639;
+    }
+
+    &--link:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #24AEAE;
+    }
+  }
+
+  &__active {
     background-color: #24AEAE;
   }
-}
 
-.sidenav__active {
-  background-color: #24AEAE;
+  &__miniMenu {
+    text-align: right;
+    padding-right: 2rem;
+
+    &--filter {
+      color: #24AEAE;
+      font-size: 17px;
+    }
+
+    &--filter:hover {
+      color: #24AEAE;
+    }
+  }
+
+  &__grayTxt {
+    color: gray;
+  }
+
+  &__hover:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__paddingTop {
+    padding-top: 3rem;
+  }
 }
 
 .site {
