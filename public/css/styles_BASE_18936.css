@@ -1,0 +1,97 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.red {
+  background-color: blue; }
+
+#workpageBody {
+  background-color: grey; }
+
+.workpage {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: white; }
+  .workpage--carousel, .workpage--text {
+    border-right: 1px solid lightgrey; }
+  .workpage--project__gallery img {
+    margin: 5px; }
+  .workpage--related {
+    border-right: 1px solid lightgray; }
+    .workpage--related__image {
+      width: 160px;
+      height: 50%; }
+  .workpage--features__content {
+    font-size: 10px; }
+
+.sidenav {
+  background-color: #232B2E;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+  .sidenav__list {
+    list-style: none;
+    padding: 0; }
+  .sidenav__item {
+    text-align: right;
+    border-bottom: #232B2E solid 1px; }
+    .sidenav__item--link {
+      text-decoration: none;
+      display: block;
+      padding: 1rem 2rem;
+      color: white;
+      background-color: #2E3639; }
+    .sidenav__item--link:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #24AEAE; }
+  .sidenav__active {
+    background-color: #24AEAE; }
+  .sidenav__miniMenu {
+    text-align: right;
+    padding-right: 2rem; }
+    .sidenav__miniMenu--filter {
+      color: #24AEAE;
+      font-size: 17px; }
+    .sidenav__miniMenu--filter:hover {
+      color: #24AEAE; }
+  .sidenav__grayTxt {
+    color: gray; }
+  .sidenav__hover:hover {
+    color: white;
+    text-decoration: none; }
+  .sidenavsidenav__paddingTop {
+    padding-top: 3rem; }
+
+.sidenav__list {
+  list-style: none;
+  padding: 0; }
+
+.sidenav__item {
+  text-align: right;
+  border-bottom: darkgray solid 1px; }
+  .sidenav__item--link {
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 1rem;
+    color: white;
+    background-color: #2E3639; }
+  .sidenav__item--link:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #24AEAE; }
+
+.sidenav__active {
+  background-color: #24AEAE; }
+
+.site {
+  margin-left: 250px; }
+
+.btn-success {
+  background-color: #1AB4B2 !important;
+  border-color: white !important; }
