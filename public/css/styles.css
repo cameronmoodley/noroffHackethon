@@ -7,6 +7,42 @@ body {
 .red {
   background-color: blue; }
 
+@media screen and (max-width: 767px) {
+  .workpage--carousel, .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--related {
+    border: none !important;
+    margin: 20px; } }
+
+#workpageBody {
+  background-color: grey; }
+
+.workpageContainer {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%; }
+
+.workpage {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: white; }
+  .workpage--carousel, .workpage--text {
+    border-right: 1px solid lightgrey; }
+  .workpage--project__gallery img {
+    margin: 5px; }
+  .workpage--related {
+    border-right: 1px solid lightgray; }
+    .workpage--related__image {
+      width: 160px;
+      height: 50%; }
+  .workpage--features__content {
+    font-size: 10px; }
+
 @media only screen and (max-width: 1096px) {
   .skillsection__services {
     padding-top: 40px !important; } }
@@ -68,6 +104,8 @@ h3 {
   width: 48.5%;
   height: 100%;
   border-right: 1px solid #bfbfbf; }
+  .whosection__breakline {
+    border-color: #bfbfbf; }
   .whosection__image {
     width: 100%; }
 
@@ -137,3 +175,87 @@ h3 {
     padding-top: 25px; }
     .skillsection__services--list {
       padding-left: 15px; }
+
+.btn-success {
+  background-color: #1AB4B2 !important;
+  border-color: white !important; }
+
+body {
+  font-family: "Roboto" background-color gray; }
+
+.card {
+  background-color: aliceblue;
+  font-family: "Roboto";
+  margin: 5px; }
+  .card__card-body {
+    text-align: center;
+    color: white;
+    background-color: #1AB4B2;
+    padding: 11px;
+    font-family: "Roboto"; }
+  .card__card-body--q {
+    background-color: #1C2326;
+    padding: 10px;
+    text-align: center;
+    color: #F3F3F3;
+    font-family: "Roboto"; }
+  .card__card-body--c {
+    color: #22B8B3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem; }
+  .card__card-body--d {
+    margin: 20px; }
+
+@media (max-width: 767px) {
+  .card {
+    padding-right: 45px; } }
+
+.sidenav {
+  background-color: #232B2E;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+  .sidenav__list {
+    list-style: none;
+    padding: 0; }
+  .sidenav__item {
+    text-align: right;
+    border-bottom: #232B2E solid 1px; }
+    .sidenav__item--link {
+      text-decoration: none;
+      display: block;
+      padding: 1rem 2rem;
+      color: white;
+      background-color: #2E3639; }
+    .sidenav__item--link:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #24AEAE; }
+  .sidenav__active {
+    background-color: #24AEAE; }
+  .sidenav__miniMenu {
+    text-align: right;
+    padding-right: 2rem; }
+    .sidenav__miniMenu--filter {
+      color: #24AEAE;
+      font-size: 17px; }
+    .sidenav__miniMenu--filter:hover {
+      color: #24AEAE; }
+  .sidenav__grayTxt {
+    color: gray; }
+  .sidenav__hover:hover {
+    color: white;
+    text-decoration: none; }
+  .sidenav__paddingTop {
+    padding-top: 3rem; }
+
+.site {
+  margin-left: 250px; }
+
+.btn-success {
+  background-color: #1AB4B2 !important;
+  border-color: white !important; }
