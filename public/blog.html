@@ -10,20 +10,49 @@
 <body>
 
    
+    <span class="[ hamburgerMenu ]" onclick="openNav()">&#9776;</span>
+    <div id="mySidenav" class="[ sidenav ]">
+        <img class="[ sidenav__menuImg ]" src="images/menu/350x120.png" alt="Logo" width="100%">
+        <ul class="[ sidenav__list ]">
+            <li class="[ sidenav__item sidenav__closebtn ]"><a href="javascript:void(0)" class="[ sidenav__item--link ]"
+                    onclick="closeNav()">CLOSE</a></li>
+            <li class="[ sidenav__item ]"><a href="index.html" class="[ sidenav__item--link sidenav__active ]">HOME</a></li>
+            <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link ]">WORK</a></li>
+            <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link ]">ABOUT</a></li>
+            <li class="[ sidenav__item ]"><a href="blog.html" class="[ sidenav__item--link ]">BLOG</a></li>
+            <li class="[ sidenav__item ]"><a href="services.html" class="[ sidenav__item--link ]">SERVICES</a></li>
+            <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
+        </ul>
+        <div class="sidenav__miniMenu">
+            <a href="#" class="[ sidenav__miniMenu--filter ]">Filter</a><br>
+            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">All works</a><br>
+            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Web design</a><br>
+            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Illustration</a><br>
+            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Photagraphy</a><br>
+            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Wallpapers</a><br>
+            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Brochures</a><br>
+
+            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon"
+                    width="30px"></a>
+            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon"
+                    width="28px"></a>
+            <p class="[ sidenav__grayTxt ]">&#160; 2014 Kappe, All Rights Reserved</p>
+        </div>
+    </div>
+    <div class="[ site ]">
+
+
+
+
+
   
       <div class="[ container ]">
         
     <!-- 1 -->
     <div class="row">
-      
-      
-     
-        
-
-      
       <div class="col-sm-3">
         <div class="[ card ]">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="myCarouse" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -47,11 +76,11 @@
                 </div>
               
                 <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <a class="left carousel-control" href="#myCarouse" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <a class="right carousel-control" href="#myCarouse" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -138,12 +167,11 @@
       </div>
       
       <div class="col-sm-3">
-        
-
+          <div class="[ card ]">
           <div class="[ card__card-body--d ]">
             <img src="./Images/work page/carousel1.jpg" alt="Avatar" style="width:100%">
       </div>
-          
+          </div>
       </div>
     
       <br>
@@ -241,7 +269,8 @@
 
 
 
-
+  <!-- siderbar js -->
+  <script src="script/menu.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

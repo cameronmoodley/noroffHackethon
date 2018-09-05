@@ -1,9 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <title>Home - Hackathon</title>
+
+  <!-- meta -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+
+  <!-- links -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -11,11 +15,20 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900" rel="stylesheet">
 </head>
 <body>
+  <!-- Hamburger menu for smaller screens -->
   <span class="[ hamburgerMenu ]" onclick="openNav()">&#9776;</span>
+
+  <!-- Navbar -->
   <div id="mySidenav" class="[ sidenav ]">
+
+      <!-- close button for smaller screen -->
+    <span class="[ sidenav__closebtn ]"><a href="javascript:void(0)" class="[ sidenav__item--link ]" onclick="closeNav()">X</a></span>
+
+    <!-- Header -->
     <img class="[ sidenav__menuImg ]" src="images/menu/350x120.png" alt="Logo" width="100%">
+
+    <!-- Main Menu -->
     <ul class="[ sidenav__list ]">
-      <li class="[ sidenav__item sidenav__closebtn ]"><a href="javascript:void(0)" class="[ sidenav__item--link ]" onclick="closeNav()">CLOSE</a></li>
       <li class="[ sidenav__item ]"><a href="index.html" class="[ sidenav__item--link sidenav__active ]">HOME</a></li>
       <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link ]">WORK</a></li>
       <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link ]">ABOUT</a></li>
@@ -23,7 +36,9 @@
       <li class="[ sidenav__item ]"><a href="services.html" class="[ sidenav__item--link ]">SERVICES</a></li>
       <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
     </ul>
-    <div class="sidenav__miniMenu">
+
+    <!-- Small Menu -->
+    <div class="[ sidenav__miniMenu ]">
       <a href="#" class="[ sidenav__miniMenu--filter ]">Filter</a><br>
       <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">All works</a><br>
       <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Web design</a><br>
@@ -32,65 +47,81 @@
       <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Wallpapers</a><br>
       <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Brochures</a><br>
 
-      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="30px"></a>
-      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="28px"></a>
+      <!-- Social media and copyright claim -->
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
       <p class="[ sidenav__grayTxt ]">&#160; 2014 Kappe, All Rights Reserved</p>
     </div>
   </div>
+
+  <!-- home webpage container -->
   <div class="[ site ]">
+
+    <!-- images -->
     <div class="[ container-fluid ]">
       <div class="[ row ]">
-        <div class="[ col-sm-3 ]">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
+        <div class="[ col-sm-6 ][ col-md-3 ]">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
         </div>
-        <div class="[ col-sm-3 ]">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
+        <div class="[ col-sm-6 ][ col-md-3 ]">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
         </div>
-        <div class="[ col-sm-3 ]">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
+        <div class="[ col-sm-6 ][ col-md-3 ]">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
         </div>
-        <div class="[ col-sm-3 ]">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
-          <img src="images/menu/350x250.png" alt="fillerImg" width="100%">
+        <div class="[ col-sm-6 ][ col-md-3 ]">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
+          <img class="[ indexImg ]" src="images/menu/350x250.png" alt="fillerImg" width="100%">
         </div>
       </div>
     </div>
+
+      <!-- Info dropdown -->
       <button class="[ info ]" type="button" onclick="openMenu()">
-        <i class="fas fa-info-circle"></i>
+        <i class="[ fas fa-info-circle ]"></i>
       </button>
       <div class="[ info__dropdown ]" id="dropdown">
-        <a class="[ info__dropdown--item ]" href="#"><i class="fas fa-phone"></i> 9930 1234 5679</a>
-        <a class="[ info__dropdown--item ]" href="#"><i class="fas fa-envelope"></i> Contact@domain.com</a>
-        <a class="[ info__dropdown--item ]" href="#"><i class="fas fa-home"></i> Street address example</a>
+        <a class="[ info__dropdown--item ]" href="#"><i class="[ fas fa-phone ]"></i> 9930 1234 5679</a>
+        <a class="[ info__dropdown--item ]" href="#"><i class="[ fas fa-envelope ]"></i> Contact@domain.com</a>
+        <a class="[ info__dropdown--item ]" href="#"><i class="[ fas fa-home ]"></i> Street address example</a>
       </div>
+
+
   </div>
+
+  <!-- Scripts -->
   <script src="script/index.js"></script>
   <script src="script/menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
