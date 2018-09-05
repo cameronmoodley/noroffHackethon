@@ -11,14 +11,37 @@
     
 </head>
 <body>
-    <div id="mySidenav" class="sidenav">
-        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+  <span class="[ hamburgerMenu ]" onclick="openNav()">&#9776;</span>
+  <div id="mySidenav" class="[ sidenav ]">
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <img class="[ sidenav__menuImg ]" src="images/menu/350x120.png" alt="Logo" width="100%">
+    <ul class="[ sidenav__list ]">
+      <li class="[ sidenav__item sidenav__closebtn ]"><a href="javascript:void(0)" class="[ sidenav__item--link ]" onclick="closeNav()">CLOSE</a></li>
+      <li class="[ sidenav__item ]"><a href="index.html" class="[ sidenav__item--link sidenav__active ]">HOME</a></li>
+      <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link ]">WORK</a></li>
+      <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link ]">ABOUT</a></li>
+      <li class="[ sidenav__item ]"><a href="blog.html" class="[ sidenav__item--link ]">BLOG</a></li>
+      <li class="[ sidenav__item ]"><a href="#" class="[ sidenav__item--link ]">SERVICES</a></li>
+      <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
+    </ul>
+    <div class="sidenav__miniMenu">
+      <a href="#" class="[ sidenav__miniMenu--filter ]">Filter</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">All works</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Web design</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Illustration</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Photagraphy</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Wallpapers</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Brochures</a><br>
+
+      <img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="30px">
+      <img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="28px">
+      <p class="[ sidenav__grayTxt ]">&#160; 2014 Kappe, All Rights Reserved</p>
     </div>
-    <div class="site">
+  </div>
+    
+    
+  <div class="[ site ]">
+ 
         <div class="[ container ]">
             <div class="[ row ]">
                  <div class="[ col-sm-12 ]">
@@ -30,7 +53,10 @@
                         </iframe>
                         </div>
                      </div>
-                     <div class="col-sm-6">
+                     <div class="[ overlay ]">
+                     
+                         
+                    <div class="col-sm-6 [ mainform ]">
                          <div class="col-xl-8 offset-xl-2 py-5">
                                 <h4 class="[ fonttypeH ]">Get in touch with us </h4>
                                     <p class="[ fonttype ]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
@@ -44,7 +70,7 @@
                             <div class="controls">
 
                                 <div class="row">
-                                    <div class="row">
+                                    <div class="row [ contexts ]">
                                         <div class=" col-sm-6">
                                         
                                             <div class="[ input ][ input-container ]">
@@ -81,7 +107,10 @@
                             </div>
                         </form>
                      </div>
-                </div>    
+                </div>  
+                     
+                     </div>
+  
             </div>
         </div>
     </div>
@@ -91,6 +120,6 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
      <!--MUST HAVE the script above-->
-
+<script src="script/menu.js"></script>
 </body>
 </html>

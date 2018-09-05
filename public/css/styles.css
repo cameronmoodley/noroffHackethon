@@ -320,8 +320,20 @@ body {
   font-weight: 100;
   color: slategray !important; }
 
+.overlay {
+  position: absolute;
+  top: 45px;
+  left: 18px; }
+
+.mainform {
+  border: solid lightslategray 0.5px;
+  background-color: white; }
+
 .form {
   margin-left: 0px; }
+
+.contexts {
+  padding: 11px; }
 
 .icon {
   padding: 10px;
@@ -374,6 +386,7 @@ body {
   padding-top: 12px !important;
   margin-top: 0px; }
 
+<<<<<<< HEAD
 #serviceBody {
   background-color: grey; }
 
@@ -412,3 +425,10 @@ body {
     margin: 25px; }
     .services--getintouch__btn:hover {
       border: 2px solid black; }
+=======
+@media (min-width: 576px) {
+  .overlay {
+    position: absolute;
+    top: 10px;
+    left: 18px; } }
+>>>>>>> 113523dae76956279df6a4182d3e7b645d32cb68
