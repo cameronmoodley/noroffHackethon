@@ -21,7 +21,7 @@
 
 .overlay{
     position: absolute;
-    top: 5px;
+    top: 45px;
     left: 18px;
 }
 
@@ -91,4 +91,15 @@
     font-size: 20px;
     padding-top:12px !important;
     margin-top: 0px;
+}
+
+
+@media (min-width: 576px) {
+    
+    .overlay{
+    position: absolute;
+    top: 10px;
+    left: 18px;
+}
+    
 }
