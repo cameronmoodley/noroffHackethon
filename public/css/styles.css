@@ -53,12 +53,44 @@ body {
   .skillsection__services {
     padding-top: 40px !important; } }
 
+@media only screen and (max-width: 846px) {
+  .skillsection__services {
+    padding-top: 70px !important; } }
+
 @media only screen and (max-width: 768px) {
+  .skillsection__services {
+    padding-top: 0px !important; }
   .whosection {
     width: 97% !important; }
+    .whosection__ourstaff {
+      margin: 0% 10%; }
+      .whosection__ourstaff--image {
+        padding-bottom: 5rem;
+        width: 100% !important; }
+  .hoverlay {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative;
+    margin: 0px;
+    display: inline-block; }
+    .hoverlay__info {
+      background-color: rgba(34, 184, 179, 0.8);
+      width: 100% !important;
+      height: 89% !important;
+      position: absolute;
+      top: 0px;
+      left: 1px;
+      display: none; }
+      .hoverlay__info--textcontainer {
+        padding-top: 4rem;
+        text-align: center;
+        color: #f3f3f3;
+        font-size: 1rem; }
+      .hoverlay__info--headline {
+        margin: 0; }
   .skillsection {
     width: 97% !important;
-    margin-left: 1.3%; }
+    margin-left: 2%; }
   .grey-margin {
     padding: 0px !important; }
   .skillsection__services {
@@ -71,29 +103,21 @@ body {
 .contentcontainer {
   padding: 0; }
 
-.grid:before, .grid:after {
-  content: '';
-  display: table; }
+/*.grid {
+    @include clearfix;
+    .item {
+        float: left;
+        //@include imagegrid(3, 3%);
+    }
+    img {
+        display: block;
+        max-width: 100%;
 
-.grid:after {
-  clear: both; }
-
-.grid .item {
-  float: left;
-  width: 30.33333%; }
-  .grid .item:nth-child(n) {
-    margin-right: 3%;
-    margin-bottom: 3%; }
-  .grid .item:nth-child(3n) {
-    margin-right: 0;
-    margin-bottom: 0; }
-
-.grid img {
-  display: block;
-  max-width: 100%; }
-  .grid img:hover {
-    opacity: 1; }
-
+        &:hover {
+            opacity: 1;
+        }
+    }
+}*/
 h3 {
   font-weight: 100; }
 
@@ -116,21 +140,38 @@ h3 {
     border-color: #bfbfbf; }
   .whosection__image {
     width: 100%; }
+  .whosection__row {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .whosection__ourstaff {
+    margin-bottom: -10px;
+    padding-right: 0px;
+    padding-left: 0; }
+    .whosection__ourstaff--image {
+      width: 93%;
+      height: 80%; }
 
 .hoverlay {
-  width: 100%;
-  height: 100%;
+  width: 93%;
+  height: 80%;
   position: relative;
   margin: 0px;
   display: inline-block; }
   .hoverlay__info {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 230px;
+    background-color: rgba(34, 184, 179, 0.8);
+    width: 93%;
+    height: 80%;
     position: absolute;
     top: 0px;
     left: 1px;
     display: none; }
+    .hoverlay__info--textcontainer {
+      padding-top: 4rem;
+      text-align: center;
+      color: #f3f3f3;
+      font-size: 1rem; }
+    .hoverlay__info--headline {
+      margin: 0; }
 
 .skillsection {
   font-size: 12px;
@@ -197,7 +238,10 @@ h3 {
   .skillsection__services {
     padding-top: 25px; }
     .skillsection__services--list {
-      padding-left: 15px; }
+      padding-left: 15px;
+      margin-bottom: 5px; }
+    .skillsection__services--item {
+      margin-bottom: 5px; }
 
 body {
   font-family: "Roboto" background-color gray; }
