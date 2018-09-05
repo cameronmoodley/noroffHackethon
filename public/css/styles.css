@@ -347,8 +347,9 @@ body {
   left: 18px; }
 
 .mainform {
-  border: solid lightslategray 0.5px;
-  background-color: white; }
+  border: solid white 0.5px !important;
+  background-color: white;
+  height: 2px; }
   .mainform--information {
     margin: 0; }
     .mainform--information__fonttypeH {
@@ -364,18 +365,24 @@ body {
 .contexts {
   padding: 11px; }
   .contexts--form {
+    height: 10px;
     margin: 0; }
     .contexts--form__comment {
-      height: 400px; }
+      height: 93px !important;
+      border-radius: 0px !important; }
     .contexts--form__button {
       font-weight: 100;
-      color: white !important; }
+      font-size: 10px;
+      color: white !important;
+      height: 49px !important;
+      border-radius: 0px !important; }
 
 .input-container {
   display: -ms-flexbox;
   /* IE10 */
   display: flex;
   width: 100%;
+  height: 40px;
   margin-bottom: 15px; }
   .input-container__icon {
     padding: 13px;
@@ -397,7 +404,12 @@ body {
 .googlemap {
   display: none; }
 
-@media (min-width: 576px) {
+/*BREAKPOINT*/
+@media (min-width: 767px) {
+  .mainform {
+    border: solid lightslategray 0.5px;
+    background-color: white;
+    height: 420px; }
   .overlay {
     position: absolute;
     top: 10px;
