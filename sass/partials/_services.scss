@@ -1,0 +1,55 @@
+#serviceBody{
+    background-color: grey;
+}
+
+.services{
+    background-color: white;
+    margin: 5px;
+    &--header{
+        text-align: center;
+    }
+    &--info{
+        text-align: center;
+        margin-bottom: 35px;
+        &--text{
+            padding: 30px;
+        }
+    }
+    &--project{
+        &__title{
+            text-align: center;
+        }
+        &__img{
+            & img{
+                width: 100%;
+                height: auto;  
+                border: 1px solid grey;  
+                margin: 15px;    
+            }
+        }
+    }
+    &--offer{
+        border-right: 1px solid lightgrey;
+        text-align: center;
+    }
+    &--getintouch{
+        &__title{
+            text-align: center;
+            font-size: 10px;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        &__btn{
+            background-image: url("../Images/services/contact.jpg") !important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid grey;
+            width: 100%;
+            height: 150px;
+            margin: 25px;
+            &:hover{
+                border: 2px solid black;
+            }
+        }
+    }
+}

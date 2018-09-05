@@ -91,6 +91,8 @@ body {
 .grid img {
   display: block;
   max-width: 100%; }
+  .grid img:hover {
+    opacity: 1; }
 
 h3 {
   font-weight: 100; }
@@ -115,6 +117,21 @@ h3 {
   .whosection__image {
     width: 100%; }
 
+.overlay {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 20px;
+  display: inline-block; }
+  .overlay__info {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    display: none; }
+
 .skillsection {
   font-size: 12px;
   background-color: #f3f3f3;
@@ -138,19 +155,19 @@ h3 {
     border: 1px solid #bfbfbf;
     margin-bottom: 10px; }
     .skillsection__skillbar--design {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 89%; }
     .skillsection__skillbar--development {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 97%; }
     .skillsection__skillbar--plugins {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 85%; }
     .skillsection__skillbar--frontend {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 75%; }
   .skillsection__testimonial {
@@ -217,7 +234,7 @@ body {
   position: fixed;
   font-size: 30px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
   background-color: #232B2E;
   color: white;
   padding: 2px 12px;
@@ -228,7 +245,7 @@ body {
   position: fixed;
   height: 100%;
   width: 250px;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   transition: 0.5s; }
@@ -272,10 +289,6 @@ body {
 .site {
   margin-left: 250px; }
 
-.col-xs-3 {
-  padding: 0;
-  margin-top: 0; }
-
 @media only screen and (max-width: 768px) {
   .hamburgerMenu {
     display: inline; }
@@ -299,12 +312,29 @@ body {
   background-color: #F3F3F3;
   margin: 15px; }
   .hed__elemet--slider {
-    background-color: noen; }
+    max-width: 900px; }
   .hed__elemet--heding {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
   .hed__elemet--text {
     padding: 15px;
+    max-width: 900px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+#HCB_comment_box {
+  max-width: 900px; }
+
+.li-om {
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .li-om__li {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style-type: none;
+    padding: 10px; }
+  .li-om__heding {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+i {
+  font-size: 20px; }
 
 .btn-success {
   background-color: #1AB4B2 !important;
@@ -320,12 +350,8 @@ body {
   font-weight: 100;
   color: slategray !important; }
 
-.fonttypeW {
-  font-weight: 100;
-  color: white !important; }
-
 .overlay {
-  position: initial;
+  position: absolute;
   top: 45px;
   left: 18px; }
 
@@ -333,23 +359,33 @@ body {
   border: solid lightslategray 0.5px;
   background-color: white; }
 
+.form {
+  margin-left: 0px; }
+
 .contexts {
   padding: 11px; }
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center; }
 
 .input-container {
   display: -ms-flexbox;
   /* IE10 */
   display: flex;
   width: 100%;
-  margin-bottom: 15px; }
-  .input-container__icon {
-    padding: 13px;
-    padding-top: 16px;
-    background: white;
-    color: #1AB4B2;
-    min-width: 50px;
-    text-align: center;
-    border: solid lightgray 0.2px; }
+  margin-bottom: 15px;
+  background-color: red; }
+
+.icon {
+  padding: 8px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center; }
 
 .input--field {
   width: 100%;
@@ -359,13 +395,110 @@ body {
 .input--field:focus {
   border: 2px solid dodgerblue; }
 
-.googlemap {
-  display: none; }
+.input-container {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px; }
+
+.icon {
+  padding: 13px;
+  padding-top: 16px;
+  background: white;
+  color: #1AB4B2;
+  min-width: 50px;
+  text-align: center;
+  border: solid lightgray 0.2px; }
+
+.fa-envelope {
+  font-size: 20px;
+  padding-top: 12px !important;
+  margin-top: 0px; }
 
 @media (min-width: 576px) {
   .overlay {
     position: absolute;
     top: 10px;
-    left: 18px; }
-  .googlemap {
-    display: block; } }
+    left: 18px; } }
+
+.info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding: 10px 20px;
+  background-color: #24AEAE;
+  color: white;
+  border: none; }
+  .info__dropdown {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    background-color: #232B2E;
+    display: none;
+    opacity: 0.5; }
+    .info__dropdown--item {
+      display: block;
+      color: white;
+      padding: 10px 20px;
+      opacity: 1; }
+    .info__dropdown--item:hover {
+      color: black;
+      text-decoration: none;
+      background-color: white; }
+
+.fa-info-circle {
+  font-size: 45px; }
+
+.fa-phone {
+  font-size: 15px; }
+
+.fa-envelope {
+  font-size: 15px; }
+
+.fa-home {
+  font-size: 15px; }
+
+.col-sm-3 {
+  padding: 0;
+  margin-top: 0; }
+
+#serviceBody {
+  background-color: grey; }
+
+.services {
+  background-color: white;
+  margin: 5px; }
+  .services--header {
+    text-align: center; }
+  .services--info {
+    text-align: center;
+    margin-bottom: 35px; }
+    .services--info--text {
+      padding: 30px; }
+  .services--project__title {
+    text-align: center; }
+  .services--project__img img {
+    width: 100%;
+    height: auto;
+    border: 1px solid grey;
+    margin: 15px; }
+  .services--offer {
+    border-right: 1px solid lightgrey;
+    text-align: center; }
+  .services--getintouch__title {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 0; }
+  .services--getintouch__btn {
+    background-image: url("../Images/services/contact.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid grey;
+    width: 100%;
+    height: 150px;
+    margin: 25px; }
+    .services--getintouch__btn:hover {
+      border: 2px solid black; }
