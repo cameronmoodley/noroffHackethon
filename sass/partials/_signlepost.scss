@@ -5,10 +5,15 @@ $colcol: #F3F3F3;
 $bgcolor: #B3B7B8;
 $cardblu: #1AB4B2;
 
-.hed{
+body{
     background-color: #B3B7B8;
-
-    &__elemet--tex {
-            text-align: center;
+}
+.hed{
+    background-color: #F3F3F3;
+    margin: 15px;
+    
+    &__elemet--text {
+        max-width: 30rem;
+        padding: none;
     }
 }
