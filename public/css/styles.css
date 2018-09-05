@@ -386,7 +386,12 @@ body {
   padding-top: 12px !important;
   margin-top: 0px; }
 
-<<<<<<< HEAD
+@media (min-width: 576px) {
+  .overlay {
+    position: absolute;
+    top: 10px;
+    left: 18px; } }
+
 #serviceBody {
   background-color: grey; }
 
@@ -425,10 +430,3 @@ body {
     margin: 25px; }
     .services--getintouch__btn:hover {
       border: 2px solid black; }
-=======
-@media (min-width: 576px) {
-  .overlay {
-    position: absolute;
-    top: 10px;
-    left: 18px; } }
->>>>>>> 113523dae76956279df6a4182d3e7b645d32cb68
