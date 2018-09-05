@@ -17,6 +17,38 @@ body {
   .workpage--related {
     border: none !important;
     margin: 20px; } }
+<<<<<<< HEAD
+=======
+
+#workpageBody {
+  background-color: grey; }
+
+.workpageContainer {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%; }
+
+.workpage {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: white; }
+  .workpage--carousel, .workpage--text {
+    border-right: 1px solid lightgrey; }
+  .workpage--project__gallery img {
+    margin: 5px; }
+  .workpage--related {
+    border-right: 1px solid lightgray; }
+    .workpage--related__image {
+      width: 160px;
+      height: 50%; }
+  .workpage--features__content {
+    font-size: 10px; }
+
+@media only screen and (max-width: 1096px) {
+  .skillsection__services {
+    padding-top: 40px !important; } }
+>>>>>>> e79bc18f1afd187bb7ba9849cedff071239ab96c
 
 #workpageBody {
   background-color: grey; }
@@ -110,6 +142,8 @@ h3 {
   width: 48.5%;
   height: 100%;
   border-right: 1px solid #bfbfbf; }
+  .whosection__breakline {
+    border-color: #bfbfbf; }
   .whosection__image {
     width: 100%; }
 
@@ -179,6 +213,10 @@ h3 {
     padding-top: 25px; }
     .skillsection__services--list {
       padding-left: 15px; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e79bc18f1afd187bb7ba9849cedff071239ab96c
 
 .btn-success {
   background-color: #1AB4B2 !important;
@@ -263,6 +301,7 @@ body {
 .btn-success {
   background-color: #1AB4B2 !important;
   border-color: white !important; }
+<<<<<<< HEAD
 
 body {
   background-color: #B3B7B8; }
@@ -273,3 +312,8 @@ body {
   .hed__elemet--text {
     max-width: 30rem;
     padding: none; }
+=======
+=======
+>>>>>>> 8191d77d698c1edafcc44df1a3b02cc9bd1ce24a
+>>>>>>> d369eeaa7484255f11a81e1a4f740f92e61effd7
+>>>>>>> e79bc18f1afd187bb7ba9849cedff071239ab96c

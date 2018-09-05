@@ -1,18 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <div class="[ container-fluid ]">
         <div class="[ row ]">
-            <div class="[ col-sm-2 ]"></div>
-            <div class="[ col-sm-10 ] [ contentcontainer ]">
+            <div class="[ col-sm-2 ]">
+                <div id="mySidenav" class="[ sidenav ]">
+                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <img src="images/350x150.png" alt="Logo" width="100%">
+                    <ul class="[ sidenav__list ]">
+                        <li class="[ sidenav__item ]"><a href="index.html" class="[ sidenav__item--link ]">HOME</a></li>
+                        <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link ]">WORK</a></li>
+                        <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link sidenav__active ]">ABOUT</a></li>
+                        <li class="[ sidenav__item ]"><a href="blog.html" class="[ sidenav__item--link ]">BLOG</a></li>
+                        <li class="[ sidenav__item ]"><a href="#" class="[ sidenav__item--link ]">SERVICES</a></li>
+                        <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
+                    </ul>
+                    <div class="sidenav__miniMenu">
+                        <a href="#" class="[ sidenav__miniMenu--filter ]">Filter</a><br>
+                        <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">All works</a><br>
+                        <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Web design</a><br>
+                        <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Illustration</a><br>
+                        <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Photagraphy</a><br>
+                        <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Wallpapers</a><br>
+                        <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Brochures</a>
+                        <p class="[ sidenav__grayTxt sidenav__paddingTop ]">&#160; 2014 Kappe, All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="[ site ]">
                 <div class="[ container-fluid ] [ grey-margin ]">
                     <div class="[ row ]">
                         <div class="[ col-sm-6 ] [ whosection ]" data-mh="match-columns">
@@ -20,15 +45,15 @@
                             <h3 class="[ whosection__headline ]">Who We Are</h3>
                             <p class="[ whosection__text ]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam eu eros non scelerisque. Phasellus pharetra, nulla at auctor tempor, mauris ligula suscipit neque, sit amet ornare odio quam non orci. Sed commodo orci lacus, vitae aliquet risus sollicitudin eu. Praesent mollis nisi nec tincidunt condimentum. Quisque interdum ante ut velit pellentesque molestie. Morbi ac quam eu mauris iaculis sollicitudin. Vestibulum tincidunt nisl sit amet sapien commodo faucibus.</p>
                             <p class="[ whosection__text ]">In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget ultrices eros. Aenean tristique imperdiet nisi posuere facilisis. Donec fermentum velit feugiat lorem commodo sagittis. Praesent id tellus odio. Etiam accumsan imperdiet justo ac laoreet. Mauris molestie nunc lectus, at scelerisque augue scelerisque in. Pellentesque turpis ligula, semper sit amet augue at, tempus cursus libero.</p>
-                            <hr>
+                            <hr class="[ whosection__breakline ]">
                             <h3 class="[ whosection__headline ]">Our Staff</h3>
                             <div class="[ grid ]">
-                            <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
-                            <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
-                            <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
-                            <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
-                            <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
-                            <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
+                                <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
+                                <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
+                                <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
+                                <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
+                                <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
+                                <img src="https://via.placeholder.com/300x300" alt="Placeholder" class="[ whosection__staffimage ] [ item ]">
                             </div>
                         </div>
                         <div class="[ col-sm-6 ] [ skillsection ]" data-mh="match-columns">
@@ -73,7 +98,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>        
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,4 +107,5 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
 </body>
+
 </html>
