@@ -318,8 +318,20 @@ body {
   font-weight: 100;
   color: slategray !important; }
 
+.overlay {
+  position: absolute;
+  top: 5px;
+  left: 18px; }
+
+.mainform {
+  border: solid lightslategray 0.5px;
+  background-color: white; }
+
 .form {
   margin-left: 0px; }
+
+.contexts {
+  padding: 11px; }
 
 .icon {
   padding: 10px;
