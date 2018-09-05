@@ -7,6 +7,17 @@ body {
 .red {
   background-color: blue; }
 
+@media screen and (max-width: 767px) {
+  .workpage--carousel, .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--text {
+    border: none !important;
+    margin: 10px; }
+  .workpage--related {
+    border: none !important;
+    margin: 20px; } }
+
 #workpageBody {
   background-color: grey; }
 
@@ -35,11 +46,12 @@ body {
 
 .card {
   background-color: aliceblue;
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  margin: 9px; }
   .card__card-body {
     text-align: center;
     color: white;
-    background-color: #22B8B3;
+    background-color: #1AB4B2;
     padding: 11px;
     font-family: "Roboto"; }
   .card__card-body--q {
@@ -53,6 +65,18 @@ body {
     padding: 10px;
     text-align: center;
     font-size: 1rem; }
+  .card__card-body--d {
+    margin: 10px; }
+
+.hamburgerMenu {
+  position: fixed;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #232B2E;
+  color: white;
+  padding: 2px 12px;
+  display: none; }
 
 .sidenav {
   background-color: #232B2E;
@@ -62,6 +86,9 @@ body {
   z-index: 1;
   top: 0;
   left: 0; }
+  .sidenav__closebtn {
+    display: none;
+    background-color: green; }
   .sidenav__list {
     list-style: none;
     padding: 0; }
@@ -98,6 +125,28 @@ body {
 
 .site {
   margin-left: 250px; }
+
+.col-xs-3 {
+  padding: 0;
+  margin-top: 0; }
+
+@media only screen and (max-width: 768px) {
+  .hamburgerMenu {
+    display: inline; }
+  .sidenav {
+    width: 0; }
+    .sidenav__menuImg {
+      display: none; }
+    .sidenav__list {
+      display: none; }
+    .sidenav__miniMenu {
+      display: none; }
+  .site {
+    margin-left: 0; } }
+
+@media only screen and (max-height: 580px) {
+  .sidenav__miniMenu {
+    display: none; } }
 
 .btn-success {
   background-color: #1AB4B2 !important;
