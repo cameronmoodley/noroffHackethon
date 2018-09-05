@@ -110,6 +110,10 @@ h3 {
     height: 100%;
     border-right: 1px solid $text-color;
     
+    &__breakline {
+        border-color: $text-color;
+    }
+    
     &__image {
         width: 100%;
     }
