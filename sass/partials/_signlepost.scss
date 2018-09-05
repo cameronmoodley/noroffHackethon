@@ -1,0 +1,14 @@
+$fontFam: 'Roboto';
+$cardcol: #22B8B3;
+$cardbacol: #1C2326;
+$colcol: #F3F3F3;
+$bgcolor: #B3B7B8;
+$cardblu: #1AB4B2;
+
+.hed{
+    background-color: #B3B7B8;
+
+    &__elemet--tex {
+            text-align: center;
+    }
+}

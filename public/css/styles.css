@@ -126,3 +126,8 @@ body {
 .btn-success {
   background-color: #1AB4B2 !important;
   border-color: white !important; }
+
+.hed {
+  background-color: #B3B7B8; }
+  .hed__elemet--tex {
+    text-align: center; }
