@@ -16,7 +16,31 @@ body {
     margin: 10px; }
   .workpage--related {
     border: none !important;
-    margin: 20px; } }
+    margin: 20px; }
+    .workpage--related__image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; }
+  .workpage--project__gallery img {
+    margin: 5px;
+    width: 100%;
+    height: auto; } }
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .workpage--carousel, .workpage--text {
+    border: none !important; }
+  .workpage--related {
+    border: none !important; }
+    .workpage--related__image {
+      width: 100%;
+      height: auto; }
+  .workpage--text {
+    border: none !important; }
+  .workpage--project__gallery img {
+    margin: 5px;
+    width: 50%;
+    height: auto; } }
 
 #workpageBody {
   background-color: grey; }
@@ -460,7 +484,25 @@ i {
 .fa-home {
   font-size: 15px; }
 
-<<<<<<< HEAD
+.col-sm-3 {
+  padding: 0;
+  margin-top: 0; }
+
+@media screen and (max-width: 767px) {
+  .services {
+    margin: 0 !important;
+    padding: 0 !important; }
+    .services--offer {
+      border-right: none !important; }
+    .services--project__img img {
+      margin: 10px 0 !important;
+      width: 100% !important;
+      height: auto;
+      border: 1px solid grey; }
+    .services--getintouch__btn {
+      width: 100%;
+      margin: 10px 0 !important; } }
+
 #serviceBody {
   background-color: grey; }
 
@@ -499,8 +541,3 @@ i {
     margin: 25px; }
     .services--getintouch__btn:hover {
       border: 2px solid black; }
-=======
-.col-sm-3 {
-  padding: 0;
-  margin-top: 0; }
->>>>>>> f923d88c996c431e4958e86bfad80f2fdc744c3d
