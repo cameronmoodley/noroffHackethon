@@ -1,0 +1,58 @@
+@media screen and (max-width: 767px) {
+    .workpage{
+        &--carousel{
+            border: none !important;
+            margin: 10px;
+        }
+        &--text{
+            border: none !important;
+            margin: 10px;
+        }
+        &--related{
+            border: none !important;
+            margin: 20px;
+        }
+    }
+}
+
+#workpageBody{
+    background-color: grey;
+}
+
+.workpageContainer{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.workpage{
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    &--carousel{
+        border-right: 1px solid lightgrey;
+    }
+    &--text{
+        @extend .workpage--carousel;
+    }
+    &--project{
+        &__gallery{
+            & img{
+                margin: 5px;
+            }
+        }
+    }
+    &--related{
+        border-right: 1px solid lightgray;
+        &__image{
+            width: 160px;
+            height: 50%;
+        }
+    }
+    &--features{
+        &__content{
+            font-size: 10px;
+        }
+    }
+}
