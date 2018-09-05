@@ -91,6 +91,8 @@ body {
 .grid img {
   display: block;
   max-width: 100%; }
+  .grid img:hover {
+    opacity: 1; }
 
 h3 {
   font-weight: 100; }
@@ -138,19 +140,19 @@ h3 {
     border: 1px solid #bfbfbf;
     margin-bottom: 10px; }
     .skillsection__skillbar--design {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 89%; }
     .skillsection__skillbar--development {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 97%; }
     .skillsection__skillbar--plugins {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 85%; }
     .skillsection__skillbar--frontend {
-      height: 25px;
+      height: 23px;
       background-color: #bfbfbf;
       width: 75%; }
   .skillsection__testimonial {
