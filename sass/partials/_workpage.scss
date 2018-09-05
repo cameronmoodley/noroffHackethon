@@ -19,12 +19,25 @@
     background-color: grey;
 }
 
+.workpageContainer{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
 .workpage{
+    width: 100%;
     margin-top: 10px;
     padding: 20px;
     background-color: white;
     &--carousel{
         border-right: 1px solid lightgrey;
+        margin-bottom: 0;
+    }
+    &--info{
+        & span{
+            color: rgb(45, 174, 190) !important;
+        }
     }
     &--text{
         @extend .workpage--carousel;
@@ -34,6 +47,10 @@
             & img{
                 margin: 5px;
             }
+        }
+        &__image{
+            height: 50px;
+            width: auto;
         }
     }
     &--related{

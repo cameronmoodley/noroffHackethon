@@ -1,0 +1,19 @@
+$fontFam: 'Roboto';
+$cardcol: #22B8B3;
+$cardbacol: #1C2326;
+$colcol: #F3F3F3;
+$bgcolor: #B3B7B8;
+$cardblu: #1AB4B2;
+
+body{
+    background-color: #B3B7B8;
+}
+.hed{
+    background-color: #F3F3F3;
+    margin: 15px;
+    
+    &__elemet--text {
+        max-width: 30rem;
+        padding: none;
+    }
+}
