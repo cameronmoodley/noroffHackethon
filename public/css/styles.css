@@ -129,7 +129,8 @@ h3 {
     height: 230px;
     position: absolute;
     top: 0px;
-    left: 1px; }
+    left: 1px;
+    display: none; }
 
 .skillsection {
   font-size: 12px;
@@ -460,7 +461,10 @@ i {
 .fa-home {
   font-size: 15px; }
 
-<<<<<<< HEAD
+.col-sm-3 {
+  padding: 0;
+  margin-top: 0; }
+
 #serviceBody {
   background-color: grey; }
 
@@ -499,8 +503,3 @@ i {
     margin: 25px; }
     .services--getintouch__btn:hover {
       border: 2px solid black; }
-=======
-.col-sm-3 {
-  padding: 0;
-  margin-top: 0; }
->>>>>>> f923d88c996c431e4958e86bfad80f2fdc744c3d
