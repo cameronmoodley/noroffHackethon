@@ -129,7 +129,8 @@ h3 {
     height: 230px;
     position: absolute;
     top: 0px;
-    left: 1px; }
+    left: 1px;
+    display: none; }
 
 .skillsection {
   font-size: 12px;
