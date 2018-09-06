@@ -86,32 +86,20 @@ body {
     padding-top: 0px !important; }
   .whosection {
     width: 97% !important; }
+    .whosection__row {
+      width: 100%; }
     .whosection__ourstaff {
-      margin: 0% 10%; }
+      margin: 0 auto;
+      padding-right: 50px; }
       .whosection__ourstaff--image {
         padding-bottom: 5rem;
         width: 100% !important; }
   .hoverlay {
     width: 100% !important;
-    height: 100% !important;
-    position: relative;
-    margin: 0px;
-    display: inline-block; }
+    height: 100% !important; }
     .hoverlay__info {
-      background-color: rgba(34, 184, 179, 0.8);
       width: 100% !important;
-      height: 89% !important;
-      position: absolute;
-      top: 0px;
-      left: 1px;
-      display: none; }
-      .hoverlay__info--textcontainer {
-        padding-top: 4rem;
-        text-align: center;
-        color: #f3f3f3;
-        font-size: 1rem; }
-      .hoverlay__info--headline {
-        margin: 0; }
+      height: 88% !important; }
   .skillsection {
     width: 97% !important;
     margin-left: 2%; }
@@ -190,8 +178,15 @@ h3 {
     top: 0px;
     left: 1px;
     display: none; }
+    .hoverlay__info--tablecontainer {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      height: 100%; }
+    .hoverlay__info--tablecell {
+      display: table-cell;
+      vertical-align: middle; }
     .hoverlay__info--textcontainer {
-      padding-top: 4rem;
       text-align: center;
       color: #f3f3f3;
       font-size: 1rem; }
@@ -560,24 +555,12 @@ h3 {
       color: black;
       text-decoration: none;
       background-color: white; }
-
-.fa-info-circle {
-  font-size: 45px; }
-
-.fa-phone {
-  font-size: 15px; }
-
-.fa-envelope {
-  font-size: 15px; }
-
-.fa-home {
-  font-size: 15px; }
-
-.col-sm-6 {
-  padding: 0; }
-
-.col-md-3 {
-  padding: 0; }
+  .info__bigIcon {
+    font-size: 45px; }
+  .info__smallIcon {
+    font-size: 15px; }
+  .info__colPadding {
+    padding: 0; }
 
 @media only screen and (max-width: 767px) {
   .indexImg {
