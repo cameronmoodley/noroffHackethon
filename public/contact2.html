@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Home - Hackathon</title>
+
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- links -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900" rel="stylesheet">
+</head>
+<body class="[ contact2--body ]">
+  <!-- Hamburger menu for smaller screens -->
+  <span class="[ hamburgerMenu ]" onclick="openNav()">&#9776;</span>
+
+  <!-- Navbar -->
+  <div id="mySidenav" class="[ sidenav ]">
+
+      <!-- close button for smaller screen -->
+    <span class="[ sidenav__closebtn ]"><a href="javascript:void(0)" class="[ sidenav__item--link ]" onclick="closeNav()">X</a></span>
+
+    <!-- Header -->
+    <img class="[ sidenav__menuImg ]" src="images/menu/350x120.png" alt="Logo" width="100%">
+
+    <!-- Main Menu -->
+    <ul class="[ sidenav__list ]">
+      <li class="[ sidenav__item ]"><a href="index.html" class="[ sidenav__item--link sidenav__active ]">HOME</a></li>
+      <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link ]">WORK</a></li>
+      <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link ]">ABOUT</a></li>
+      <li class="[ sidenav__item ]"><a href="blog.html" class="[ sidenav__item--link ]">BLOG</a></li>
+      <li class="[ sidenav__item ]"><a href="services.html" class="[ sidenav__item--link ]">SERVICES</a></li>
+      <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
+    </ul>
+
+    <!-- Small Menu -->
+    <div class="[ sidenav__miniMenu ]">
+      <a href="#" class="[ sidenav__miniMenu--filter ]">Filter</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">All works</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Web design</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Illustration</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Photagraphy</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Wallpapers</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Brochures</a><br>
+
+      <!-- Social media and copyright claim -->
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <p class="[ sidenav__grayTxt ]">&#160; 2014 Kappe, All Rights Reserved</p>
+    </div>
+  </div>
+
+  <!-- home webpage container -->
+  <div class="[ site ]">
+    <!-- images -->
+    <div class="[ container-fluid ]">
+      <div class="[ row ]">
+          <div class="[ col-sm-12 ] [ contact2 ]">
+                <div>
+                    <iframe class="[ displays--googlemap__show ]" width="100%" height="1000px" overflow="hidden" 
+                        id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                 </div>
+                 <div class="[ col-sm-12 col-md-6 col-lg-6 ] [ contact2--form ]">
+                     <form>
+                        <div class="[ row ]">
+                            <div class="[ col-sm-12 ]">
+                                <h2>Get in touch with us</h2>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                            </div>
+                            <div class="[ col-sm-6 ]">
+                                    <div class="[ contact2--elements ]">
+                                        <i class="[ fa fa-user ]"></i>
+                                        <input id="form_name" type="text" name="name" class="" placeholder="Name" required="required" data-error="Firstname is required.">
+                                    </div>
+                                    <div class="[ contact2--elements ]">
+                                        <i class="[ far fa-envelope ]"></i>
+                                        <input id="form_email" type="email" name="email" class="" placeholder="e-mail" required="required" data-error="Valid email is required.">    
+                                    </div>
+                                    <div class="[ contact2--elements ]">
+                                        <i class="[ fas fa-link ]"></i>
+                                        <input id="form_url" type="url" name="url" class="" placeholder="website" required="required" data-error="Valid url is required.">
+                                    </div>
+                            </div>
+                            <div class="[ col-sm-6 ]">
+                                <div class="[ contact2--elements ]">
+                                        <textarea id="form_message" name="message" class="" placeholder="Message" rows="4" required="required" data-error="Please, leave us a message.">
+                                        </textarea>
+                                </div>
+                                <div class="[ contact2--elements ]">
+                                        <button type="submit" class="[ btn ]" value="">SEND NOW!</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                     </form>
+                 </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script/index.js"></script>
+  <script src="script/menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

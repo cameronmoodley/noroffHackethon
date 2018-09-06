@@ -1,12 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
-body {
-  font-family: 'Roboto', sans-serif; }
-
-.red {
-  background-color: blue; }
-
 #workpageBody {
   background-color: grey; }
 
@@ -82,10 +76,15 @@ body {
     padding-top: 70px !important; } }
 
 @media only screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden; }
+  body {
+    overflow-x: hidden; }
   .skillsection__services {
-    padding-top: 0px !important; }
+    padding-top: 70px !important; }
   .whosection {
-    width: 97% !important; }
+    padding-right: 30px !important;
+    width: 100% !important; }
     .whosection__row {
       width: 100%; }
     .whosection__ourstaff {
@@ -93,19 +92,22 @@ body {
       padding: 0 20px 0 0 !important; }
       .whosection__ourstaff--image {
         padding-bottom: 5rem;
-        width: 100% !important; }
+        width: 100% !important;
+        height: 250px !important; }
   .hoverlay {
     width: 100% !important;
     height: 100% !important; }
     .hoverlay__info {
       width: 100% !important;
-      height: 88% !important; }
+      height: 80% !important; }
   .skillsection {
-    width: 97% !important;
+    padding-right: 30px !important;
+    width: 100% !important;
     margin-left: 2%; }
   .grey-margin {
     padding: 0px !important; }
   .skillsection__services {
+    padding-top: 40px !important;
     margin-bottom: 50px; } }
 
 body {
@@ -399,6 +401,45 @@ h3 {
 @media only screen and (max-height: 650px) {
   .sidenav__miniMenu {
     display: none; } }
+
+.contact2 {
+  position: relative;
+  padding: 0px; }
+  .contact2--body {
+    overflow: hidden !important; }
+  .contact2--form {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    padding: 15px; }
+  .contact2--elements {
+    position: relative;
+    margin-top: 20px; }
+    .contact2--elements i {
+      color: #1AB4B2;
+      position: absolute;
+      font-size: 25px;
+      top: 12px;
+      left: 6px; }
+    .contact2--elements input {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 0px;
+      padding-left: 35px; }
+    .contact2--elements textarea {
+      height: 120px;
+      width: 100%; }
+    .contact2--elements button {
+      width: 100%;
+      height: 50px;
+      margin-top: -7px;
+      border: none;
+      box-shadow: none;
+      border-radius: 0px;
+      color: #ffffff;
+      background-color: #1AB4B2; }
 
 .hed {
   background-color: #F3F3F3; }
