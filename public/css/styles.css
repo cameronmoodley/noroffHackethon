@@ -560,24 +560,12 @@ h3 {
       color: black;
       text-decoration: none;
       background-color: white; }
-
-.fa-info-circle {
-  font-size: 45px; }
-
-.fa-phone {
-  font-size: 15px; }
-
-.fa-envelope {
-  font-size: 15px; }
-
-.fa-home {
-  font-size: 15px; }
-
-.col-sm-6 {
-  padding: 0; }
-
-.col-md-3 {
-  padding: 0; }
+  .info__bigIcon {
+    font-size: 45px; }
+  .info__smallIcon {
+    font-size: 15px; }
+  .info__colPadding {
+    padding: 0; }
 
 @media only screen and (max-width: 767px) {
   .indexImg {
