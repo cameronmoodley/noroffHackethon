@@ -267,30 +267,42 @@ h3 {
     .skillsection__services--item {
       margin-bottom: 5px; }
 
-body {
-  font-family: "Roboto" background-color gray; }
-
 .card {
-  background-color: aliceblue;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin: 5px; }
   .card__card-body {
     text-align: center;
     color: white;
     background-color: #1AB4B2;
     padding: 11px;
-    font-family: "Roboto"; }
+    font-family: "Roboto", sans-serif; }
   .card__card-body--q {
     background-color: #1C2326;
     padding: 10px;
     text-align: center;
-    color: #F3F3F3;
-    font-family: "Roboto"; }
+    color: #fcf9f9;
+    font-family: "Roboto", sans-serif; }
   .card__card-body--c {
     color: #22B8B3;
     padding: 10px;
     text-align: center;
     font-size: 1rem; }
+  .card__card-body--W {
+    background-color: #fcf9f9;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem; }
+  .card__card-body--ic {
+    color: #B3B7B8;
+    font-size: 1.1rem;
+    margin: 4px; }
+  .card__card--body__text-muted {
+    color: #fcf9f9;
+    font-size: 0.9rem;
+    margin: 4px; }
+  .card__card--body__text-muted--W {
+    font-size: 0.9rem;
+    color: #B3B7B8; }
 
 @media (max-width: 767px) {
   .card {
