@@ -78,10 +78,15 @@ body {
     padding-top: 70px !important; } }
 
 @media only screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden; }
+  body {
+    overflow-x: hidden; }
   .skillsection__services {
-    padding-top: 0px !important; }
+    padding-top: 70px !important; }
   .whosection {
-    width: 97% !important; }
+    padding-right: 30px !important;
+    width: 100% !important; }
     .whosection__row {
       width: 100%; }
     .whosection__ourstaff {
@@ -89,19 +94,22 @@ body {
       padding: 0 20px 0 0 !important; }
       .whosection__ourstaff--image {
         padding-bottom: 5rem;
-        width: 100% !important; }
+        width: 100% !important;
+        height: 250px !important; }
   .hoverlay {
     width: 100% !important;
     height: 100% !important; }
     .hoverlay__info {
       width: 100% !important;
-      height: 88% !important; }
+      height: 80% !important; }
   .skillsection {
-    width: 97% !important;
+    padding-right: 30px !important;
+    width: 100% !important;
     margin-left: 2%; }
   .grey-margin {
     padding: 0px !important; }
   .skillsection__services {
+    padding-top: 40px !important;
     margin-bottom: 50px; } }
 
 body {
@@ -270,15 +278,22 @@ h3 {
     font-family: "Roboto", sans-serif; }
   .card__card-body--q {
     background-color: #1C2326;
+    border-left: 25px solid #1AB4B2;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     color: #fcf9f9;
-    font-family: "Roboto", sans-serif; }
+    border-right-color: gray;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem; }
   .card__card-body--c {
     color: #22B8B3;
-    padding: 10px;
     text-align: center;
-    font-size: 1rem; }
+    font-size: 1.5rem; }
+  .card__card-body--p {
+    color: #22B8B3;
+    padding: 0px;
+    text-align: center;
+    font-size: 3rem; }
   .card__card-body--W {
     background-color: #fcf9f9;
     padding: 5px;

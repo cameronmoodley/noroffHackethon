@@ -51,14 +51,31 @@ $roundness: 20px 0 20px 0;
 }
 
 @media only screen and (max-width: 768px) {
-    .skillsection__services {
-        padding-top: 0px !important;
+    
+    html {
+        overflow-x: hidden;
     }
     
+    body {
+        //position: fixed;
+        overflow-x: hidden;
+    }
+    
+    .skillsection__services {
+        padding-top: 70px !important;
+    }
+    
+    //.nomarginright {
+      //  margin-right: 0;
+    //}
+    
     .whosection {
-        width: 97% !important;
+        padding-right: 30px !important;
+        width: 100% !important;
+        //margin-right: -5 !important
         
         &__row {
+            //margin-right: -5 !important;
             width: 100%;
         }
         
@@ -69,6 +86,7 @@ $roundness: 20px 0 20px 0;
             &--image {
                 padding-bottom: 5rem;
                 width: 100% !important;
+                height: 250px !important;
             }
         }
     }
@@ -79,12 +97,13 @@ $roundness: 20px 0 20px 0;
     
     &__info {
         width: 100% !important; 
-        height: 88% !important; 
+        height: 80% !important; 
     }
 }
 
     .skillsection {
-        width: 97% !important;
+        padding-right: 30px !important;
+        width: 100% !important;
         margin-left: 2%;
     }
 
@@ -93,6 +112,7 @@ $roundness: 20px 0 20px 0;
     }
 
     .skillsection__services {
+        padding-top: 40px !important;
         margin-bottom: 50px;
     }
 }
