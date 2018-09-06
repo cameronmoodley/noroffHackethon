@@ -90,7 +90,7 @@ body {
       width: 100%; }
     .whosection__ourstaff {
       margin: 0 auto;
-      padding-right: 50px; }
+      padding: 0 20px 0 0 !important; }
       .whosection__ourstaff--image {
         padding-bottom: 5rem;
         width: 100% !important; }
