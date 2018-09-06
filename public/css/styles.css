@@ -274,18 +274,25 @@ h3 {
     font-family: "Roboto", sans-serif; }
   .card__card-body--q {
     background-color: #1C2326;
+    border-left: 25px solid #1AB4B2;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     color: #fcf9f9;
-    font-family: "Roboto", sans-serif; }
+    border-right-color: gray;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem; }
   .card__card-body--c {
     color: #22B8B3;
-    padding: 10px;
     text-align: center;
-    font-size: 1rem; }
+    font-size: 1.5rem; }
+  .card__card-body--p {
+    color: #22B8B3;
+    padding: 0px;
+    text-align: center;
+    font-size: 3rem; }
   .card__card-body--W {
     background-color: #fcf9f9;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     font-size: 0.9rem; }
   .card__card-body--ic {
@@ -300,9 +307,16 @@ h3 {
     font-size: 0.9rem;
     color: #B3B7B8; }
 
-@media (max-width: 767px) {
-  .card {
-    padding-right: 45px; } }
+.bt-no {
+  text-align: center;
+  padding-top: 50px; }
+  .bt-no__item {
+    width: 150px;
+    background-color: #1AB4B2;
+    color: #fcf9f9;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 10px 0px 0px; }
 
 .hamburgerMenu {
   position: fixed;
@@ -443,7 +457,8 @@ h3 {
   height: 38px; }
 
 .overlay {
-  padding-left: 7px; }
+  padding-left: 0px;
+  padding-right: 0px; }
 
 .mainform {
   border: solid white 0.5px !important;
@@ -453,11 +468,9 @@ h3 {
     margin: 0;
     padding-top: 40px; }
     .mainform--information__fonttypeH {
-      font-weight: 100;
-      color: slategray !important; }
+      font-weight: 100; }
     .mainform--information__fonttypeB {
-      font-weight: 100;
-      color: slategray !important; }
+      font-weight: 100; }
     .mainform--information__fonttype {
       font-weight: normal;
       color: lightslategray !important; }
@@ -514,13 +527,16 @@ h3 {
       display: none; }
 
 .commentfield {
-  padding-left: 0px;
-  padding-right: 0px; }
+  margin: 0px; }
 
 /*BREAKPOINT*/
 @media (min-width: 767px) {
+  .mainform {
+    padding-left: 0px; }
   .contactbody {
-    overflow: hidden; }
+    overflow: hidden;
+    padding-left: 0px;
+    padding-top: 0px; }
   .containcontainer {
     padding: 0px; }
   .mainform {
@@ -534,7 +550,7 @@ h3 {
   .overlay {
     position: absolute;
     top: 10px;
-    left: 25px; }
+    left: 10px; }
   .displays {
     margin: 0;
     overflow: hidden; }
@@ -543,8 +559,8 @@ h3 {
       .displays--googlemap__show {
         display: block; }
   .commentfield {
-    padding-left: 10px;
-    padding-right: 0px; }
+    padding-left: 0px;
+    padding-right: 20px; }
   .contexts {
     padding: 11px;
     margin-left: 5px; }
@@ -599,21 +615,6 @@ h3 {
   .indexImg {
     margin-bottom: 10px; } }
 
-@media screen and (max-width: 767px) {
-  .services {
-    margin: 0 !important;
-    padding: 0 !important; }
-    .services--offer {
-      border-right: none !important; }
-    .services--project__img img {
-      margin: 10px 0 !important;
-      width: 100% !important;
-      height: auto;
-      border: 1px solid grey; }
-    .services--getintouch__btn {
-      width: 100%;
-      margin: 10px 0 !important; } }
-
 #serviceBody {
   background-color: grey; }
 
@@ -652,3 +653,18 @@ h3 {
     margin: 25px; }
     .services--getintouch__btn:hover {
       border: 2px solid black; }
+
+@media screen and (max-width: 767px) {
+  .services {
+    margin: 0 !important;
+    padding: 0 !important; }
+    .services--offer {
+      border-right: none !important; }
+    .services--project__img img {
+      margin: 10px 0 !important;
+      width: 100% !important;
+      height: auto;
+      border: 1px solid grey; }
+    .services--getintouch__btn {
+      width: 100%;
+      margin: 10px 0 !important; } }
