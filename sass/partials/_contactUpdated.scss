@@ -55,3 +55,12 @@ $sitegreen: #1AB4B2;
         }
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+    .contact2--form {
+        position: relative;
+        z-index: 99;
+    }
+    
+}

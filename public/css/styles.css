@@ -326,7 +326,7 @@ h3 {
   position: fixed;
   font-size: 30px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 9999;
   background-color: #232B2E;
   color: white;
   padding: 2px 12px;
@@ -337,7 +337,7 @@ h3 {
   position: fixed;
   height: 100%;
   width: 250px;
-  z-index: 2;
+  z-index: 9999;
   top: 0;
   left: 0;
   transition: 0.5s; }
@@ -442,6 +442,11 @@ h3 {
       border-radius: 0px;
       color: #ffffff;
       background-color: #1AB4B2; }
+
+@media only screen and (max-width: 767px) {
+  .contact2--form {
+    position: relative;
+    z-index: 99; } }
 
 .hed {
   background-color: #F3F3F3; }
