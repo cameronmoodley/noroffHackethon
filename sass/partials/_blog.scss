@@ -1,19 +1,16 @@
-$fontFam: 'Roboto';
+$fontFam: 'Roboto', sans-serif;
 $cardcol: #22B8B3;
 $cardbacol: #1C2326;
-$colcol: #F3F3F3;
+$colcol: rgb(252, 249, 249);
+$colcolW: #FFFFFF;
 $bgcolor: #B3B7B8;
 $cardblu: #1AB4B2;
 
-body{
-    font-family: $fontFam
-    background-color gray;
-    
-}
+
 
 
 .card{
-    background-color: aliceblue;
+    
     font-family: $fontFam;
     margin: 5px;
    
@@ -41,11 +38,35 @@ body{
         font-size: 1rem;
        
     }
-    &__card-body--d{
-        margin: 20px;
+    &__card-body--W--HED{
         
+    }
+
+
+    &__card-body--W{
+        background-color: $colcol;
+        padding: 10px;
+        text-align: left;
+        font-size: 0.9rem;
+
+       
+    }
+    &__card-body--ic{
+        color: $bgcolor;
+        font-size: 1.1rem;
+        margin: 4px;
+    }
+    &__card--body__text-muted{
+        color: $colcol;
+        font-size: 0.9rem;
+        margin: 4px;
+    }
+    &__card--body__text-muted--W{
         
-    } 
+        font-size: 0.9rem;
+        color: $bgcolor;
+    }
+ 
 
 }
 
