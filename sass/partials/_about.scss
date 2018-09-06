@@ -1,9 +1,10 @@
 //MIXINS
 $white-color: #f3f3f3;
+$grey-color: #e2e2e2;
 $grey-margin-color: #b3b7b8;
-$green-color: #22b8b3;
-$text-color: #bfbfbf;
-$black-color: black;
+$green-color: #1ab5b3;
+$text-color: #a3a3a3;
+$headline-color: #000000;
 
 $roundness: 20px 0 20px 0;
 
@@ -42,14 +43,62 @@ $roundness: 20px 0 20px 0;
     }
 }
 
+@media only screen and (max-width: 846px) {
+    .skillsection__services {
+        padding-top: 70px !important;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    .skillsection__services {
+        padding-top: 0px !important;
+    }
+    
     .whosection {
         width: 97% !important;
+        
+        &__ourstaff {
+            margin: 0% 10%;
+            
+            &--image {
+                padding-bottom: 5rem;
+                width: 100% !important;
+            }
+        }
     }
+    
+    .hoverlay {
+    width: 100% !important; 
+    height: 100% !important;
+    position: relative; 
+    margin: 0px; 
+    display: inline-block;
+    
+    &__info {
+        background-color: rgba(34,184,179,.8); 
+        width: 100% !important; 
+        height: 89% !important; 
+        position: absolute; 
+        top: 0px; 
+        left: 1px;
+        display: none;
+        
+        &--textcontainer {
+            padding-top: 4rem;
+            text-align: center;
+            color: $white-color;
+            font-size: 1rem; 
+        }
+        
+        &--headline {
+            margin: 0;
+        }
+    }
+}
 
     .skillsection {
         width: 97% !important;
-        margin-left: 1.3%;
+        margin-left: 2%;
     }
 
     .grey-margin {
@@ -75,11 +124,11 @@ body {
     padding: 0;
 }
 
-.grid {
+/*.grid {
     @include clearfix;
     .item {
         float: left;
-        @include imagegrid(3, 3%);
+        //@include imagegrid(3, 3%);
     }
     img {
         display: block;
@@ -89,7 +138,7 @@ body {
             opacity: 1;
         }
     }
-}
+}*/
 
 h3 {
     font-weight: 100;
@@ -119,23 +168,50 @@ h3 {
     &__image {
         width: 100%;
     }
+    
+    &__row {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    &__ourstaff {
+        margin-bottom: -10px;
+        padding-right: 0px;
+        padding-left: 0;
+        
+        &--image {
+            width: 93%;
+            height: 80%
+        }
+    }
 }
 
 .hoverlay {
-    width: 100%; 
-    height: 100%; 
+    width: 93%; 
+    height: 80%;
     position: relative; 
     margin: 0px; 
     display: inline-block;
     
     &__info {
-        background-color: rgba(0,0,0,0.5); 
-        width: 100%; 
-        height: 230px; 
+        background-color: rgba(34,184,179,.8); 
+        width: 93%; 
+        height: 80%; 
         position: absolute; 
         top: 0px; 
         left: 1px;
         display: none;
+        
+        &--textcontainer {
+            padding-top: 4rem;
+            text-align: center;
+            color: $white-color;
+            font-size: 1rem; 
+        }
+        
+        &--headline {
+            margin: 0;
+        }
     }
 }
 
@@ -219,6 +295,11 @@ h3 {
 
         &--list {
             padding-left: 15px;
+            margin-bottom: 5px;
+        }
+        
+        &--item {
+            margin-bottom: 5px;
         }
 
     }
