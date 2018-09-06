@@ -285,7 +285,7 @@ h3 {
     font-size: 1rem; }
   .card__card-body--W {
     background-color: #fcf9f9;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     font-size: 0.9rem; }
   .card__card-body--ic {
@@ -300,9 +300,16 @@ h3 {
     font-size: 0.9rem;
     color: #B3B7B8; }
 
-@media (max-width: 767px) {
-  .card {
-    padding-right: 45px; } }
+.bt-no {
+  text-align: center;
+  padding-top: 50px; }
+  .bt-no__item {
+    width: 150px;
+    background-color: #1AB4B2;
+    color: #fcf9f9;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 10px 0px 0px; }
 
 .hamburgerMenu {
   position: fixed;
@@ -513,10 +520,6 @@ h3 {
     .displays--googlemap__show {
       display: none; }
 
-.commentfield {
-  padding-left: 0px;
-  padding-right: 0px; }
-
 /*BREAKPOINT*/
 @media (min-width: 767px) {
   .contactbody {
@@ -543,7 +546,7 @@ h3 {
       .displays--googlemap__show {
         display: block; }
   .commentfield {
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right: 0px; }
   .contexts {
     padding: 11px;
