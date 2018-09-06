@@ -566,21 +566,6 @@ h3 {
   .indexImg {
     margin-bottom: 10px; } }
 
-@media screen and (max-width: 767px) {
-  .services {
-    margin: 0 !important;
-    padding: 0 !important; }
-    .services--offer {
-      border-right: none !important; }
-    .services--project__img img {
-      margin: 10px 0 !important;
-      width: 100% !important;
-      height: auto;
-      border: 1px solid grey; }
-    .services--getintouch__btn {
-      width: 100%;
-      margin: 10px 0 !important; } }
-
 #serviceBody {
   background-color: grey; }
 
@@ -619,3 +604,18 @@ h3 {
     margin: 25px; }
     .services--getintouch__btn:hover {
       border: 2px solid black; }
+
+@media screen and (max-width: 767px) {
+  .services {
+    margin: 0 !important;
+    padding: 0 !important; }
+    .services--offer {
+      border-right: none !important; }
+    .services--project__img img {
+      margin: 10px 0 !important;
+      width: 100% !important;
+      height: auto;
+      border: 1px solid grey; }
+    .services--getintouch__btn {
+      width: 100%;
+      margin: 10px 0 !important; } }
