@@ -4,7 +4,7 @@
   top: 0;
   z-index: 1;
   padding: 10px 20px;
-  background-color: #24AEAE;
+  background-color: $menuBtnHover;
   color: white;
   border: none;
 
@@ -12,7 +12,7 @@
     position: absolute;
     right: 0;
     top: 65px;
-    background-color: #232B2E;
+    background-color: $sidebarColor;
     display: none;
     opacity: 0.5;
 
@@ -29,30 +29,18 @@
       background-color: white;
     }
   }
-}
 
-.fa-info-circle {
-  font-size: 45px;
-}
+  &__bigIcon {
+    font-size: 45px;
+  }
 
-.fa-phone {
-  font-size: 15px;
-}
+  &__smallIcon {
+    font-size: 15px;
+  }
 
-.fa-envelope {
- font-size: 15px;
-}
-
-.fa-home {
-  font-size: 15px;
-}
-
-.col-sm-6 {
-  padding: 0;
-}
-
-.col-md-3 {
-  padding: 0;
+  &__colPadding {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
