@@ -7,6 +7,37 @@ body {
 .red {
   background-color: blue; }
 
+#workpageBody {
+  background-color: grey; }
+
+.workpageContainer {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%; }
+
+.workpage {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: white; }
+  .workpage--carousel, .workpage--text {
+    border-right: 1px solid lightgrey;
+    margin-bottom: 0; }
+  .workpage--info span {
+    color: #2daebe !important; }
+  .workpage--project__gallery img {
+    margin: 5px; }
+  .workpage--project__image {
+    height: 50px;
+    width: auto; }
+  .workpage--related {
+    border-right: 1px solid lightgray; }
+    .workpage--related__image {
+      width: 160px;
+      height: 50%; }
+  .workpage--features__content {
+    font-size: 10px; }
+
 @media screen and (max-width: 767px) {
   .workpage--carousel, .workpage--text {
     border: none !important;
@@ -41,37 +72,6 @@ body {
     margin: 5px;
     width: 50%;
     height: auto; } }
-
-#workpageBody {
-  background-color: grey; }
-
-.workpageContainer {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%; }
-
-.workpage {
-  width: 100%;
-  margin-top: 10px;
-  padding: 20px;
-  background-color: white; }
-  .workpage--carousel, .workpage--text {
-    border-right: 1px solid lightgrey;
-    margin-bottom: 0; }
-  .workpage--info span {
-    color: #2daebe !important; }
-  .workpage--project__gallery img {
-    margin: 5px; }
-  .workpage--project__image {
-    height: 50px;
-    width: auto; }
-  .workpage--related {
-    border-right: 1px solid lightgray; }
-    .workpage--related__image {
-      width: 160px;
-      height: 50%; }
-  .workpage--features__content {
-    font-size: 10px; }
 
 @media only screen and (max-width: 1096px) {
   .skillsection__services {
