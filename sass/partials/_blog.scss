@@ -25,18 +25,26 @@ $cardblu: #1AB4B2;
     }
     &__card-body--q{
         background-color: $cardbacol;
+        border-left: 25px solid $cardblu;
         padding: 10px;
-        text-align: center;
+        text-align: left;
         color: $colcol;
+        border-right-color: gray;
         font-family: $fontFam;
+        font-size: 0.8rem;
        
     }
     &__card-body--c{
         color: $cardcol;
-        padding: 10px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
        
+    }
+    &__card-body--p{
+        color:$cardcol;
+        padding: 0px;
+        text-align: center;
+        font-size: 3rem;
     }
     
 
@@ -65,6 +73,7 @@ $cardblu: #1AB4B2;
         color: $bgcolor;
     }
  
+   
 
 }
 

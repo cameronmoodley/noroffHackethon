@@ -2,7 +2,8 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 #workpageBody {
-  background-color: grey; }
+  background-color: grey;
+  padding: 10px; }
 
 .workpageContainer {
   margin-left: 0;
@@ -13,6 +14,7 @@ body {
   width: 100%;
   margin-top: 10px;
   padding: 20px;
+  margin-bottom: 10px;
   background-color: white; }
   .workpage--carousel, .workpage--text {
     border-right: 1px solid lightgrey;
@@ -276,15 +278,22 @@ h3 {
     font-family: "Roboto", sans-serif; }
   .card__card-body--q {
     background-color: #1C2326;
+    border-left: 25px solid #1AB4B2;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     color: #fcf9f9;
-    font-family: "Roboto", sans-serif; }
+    border-right-color: gray;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem; }
   .card__card-body--c {
     color: #22B8B3;
-    padding: 10px;
     text-align: center;
-    font-size: 1rem; }
+    font-size: 1.5rem; }
+  .card__card-body--p {
+    color: #22B8B3;
+    padding: 0px;
+    text-align: center;
+    font-size: 3rem; }
   .card__card-body--W {
     background-color: #fcf9f9;
     padding: 5px;
@@ -317,7 +326,7 @@ h3 {
   position: fixed;
   font-size: 30px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 9999;
   background-color: #232B2E;
   color: white;
   padding: 2px 12px;
@@ -328,7 +337,7 @@ h3 {
   position: fixed;
   height: 100%;
   width: 250px;
-  z-index: 2;
+  z-index: 9999;
   top: 0;
   left: 0;
   transition: 0.5s; }
@@ -395,45 +404,6 @@ h3 {
   .sidenav__miniMenu {
     display: none; } }
 
-.contact2 {
-  position: relative;
-  padding: 0px; }
-  .contact2--body {
-    overflow: hidden !important; }
-  .contact2--form {
-    position: absolute;
-    background-color: white;
-    top: 10px;
-    left: 10px;
-    z-index: 9999;
-    padding: 15px; }
-  .contact2--elements {
-    position: relative;
-    margin-top: 20px; }
-    .contact2--elements i {
-      color: #1AB4B2;
-      position: absolute;
-      font-size: 25px;
-      top: 12px;
-      left: 6px; }
-    .contact2--elements input {
-      width: 100%;
-      height: 50px;
-      margin-bottom: 0px;
-      padding-left: 35px; }
-    .contact2--elements textarea {
-      height: 120px;
-      width: 100%; }
-    .contact2--elements button {
-      width: 100%;
-      height: 50px;
-      margin-top: -7px;
-      border: none;
-      box-shadow: none;
-      border-radius: 0px;
-      color: #ffffff;
-      background-color: #1AB4B2; }
-
 .hed {
   background-color: #F3F3F3; }
   .hed__elemet--slider {
@@ -492,12 +462,13 @@ h3 {
 
 .overlay {
   padding-left: 0px;
-  padding-right: 0px; }
+  padding-right: 0px;
+  height: 620px; }
 
 .mainform {
   border: solid white 0.5px !important;
   background-color: white;
-  height: 2px; }
+  height: 1000p; }
   .mainform--information {
     margin: 0;
     padding-top: 40px; }

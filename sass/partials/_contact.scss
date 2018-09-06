@@ -11,12 +11,13 @@
 .overlay{
     padding-left: 0px;
     padding-right: 0px;
+    height: 620px;
 }
 
 .mainform{
     border: solid white 0.5px !important;
     background-color: white;
-    height: 2px;
+    height: 1000p;
     &--information{
         margin: 0;
         padding-top: 40px;
@@ -35,8 +36,6 @@
     }
     
 }
-
-
 .contexts{
     padding: 11px;
     margin-left: 5px;

@@ -1,5 +1,6 @@
 #workpageBody{
     background-color: grey;
+    padding: 10px;
 }
 
 .workpageContainer{
@@ -12,6 +13,7 @@
     width: 100%;
     margin-top: 10px;
     padding: 20px;
+    margin-bottom: 10px;
     background-color: white;
     &--carousel{
         border-right: 1px solid lightgrey;
