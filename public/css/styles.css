@@ -443,8 +443,7 @@ h3 {
   height: 38px; }
 
 .overlay {
-  padding-left: 0px;
-  padding-right: 0px; }
+  padding-left: 7px; }
 
 .mainform {
   border: solid white 0.5px !important;
@@ -454,9 +453,11 @@ h3 {
     margin: 0;
     padding-top: 40px; }
     .mainform--information__fonttypeH {
-      font-weight: 100; }
+      font-weight: 100;
+      color: slategray !important; }
     .mainform--information__fonttypeB {
-      font-weight: 100; }
+      font-weight: 100;
+      color: slategray !important; }
     .mainform--information__fonttype {
       font-weight: normal;
       color: lightslategray !important; }
@@ -513,16 +514,13 @@ h3 {
       display: none; }
 
 .commentfield {
-  margin: 0px; }
+  padding-left: 0px;
+  padding-right: 0px; }
 
 /*BREAKPOINT*/
 @media (min-width: 767px) {
-  .mainform {
-    padding-left: 0px; }
   .contactbody {
-    overflow: hidden;
-    padding-left: 0px;
-    padding-top: 0px; }
+    overflow: hidden; }
   .containcontainer {
     padding: 0px; }
   .mainform {
@@ -536,7 +534,7 @@ h3 {
   .overlay {
     position: absolute;
     top: 10px;
-    left: 10px; }
+    left: 25px; }
   .displays {
     margin: 0;
     overflow: hidden; }
@@ -545,8 +543,8 @@ h3 {
       .displays--googlemap__show {
         display: block; }
   .commentfield {
-    padding-left: 0px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 0px; }
   .contexts {
     padding: 11px;
     margin-left: 5px; }

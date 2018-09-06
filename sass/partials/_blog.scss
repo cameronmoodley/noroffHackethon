@@ -38,14 +38,12 @@ $cardblu: #1AB4B2;
         font-size: 1rem;
        
     }
-    &__card-body--W--HED{
-        
-    }
+    
 
 
     &__card-body--W{
         background-color: $colcol;
-        padding: 10px;
+        padding: 5px;
         text-align: left;
         font-size: 0.9rem;
 
@@ -70,9 +68,18 @@ $cardblu: #1AB4B2;
 
 }
 
-@media (max-width: 767px) {
-    .card{
-        padding-right: 45px;
+.bt-no{
+    text-align: center;
+    padding-top: 50px;
+   
+
+    &__item {
+        width: 150px;
+        background-color: #1AB4B2;
+        color: $colcol;
+        padding: 10px;
+        border: none;
+        border-radius: 10px 10px 0px 0px;
     }
 }
 
