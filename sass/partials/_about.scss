@@ -1,155 +1,5 @@
-//MIXINS
-$white-color: #f3f3f3;
-$grey-color: #e2e2e2;
-$grey-margin-color: #b3b7b8;
-$green-color: #1ab5b3;
-$text-color: #a3a3a3;
-$headline-color: #000000;
-
-$roundness: 20px 0 20px 0;
-
-@mixin clearfix {
-    &:before,
-    &:after {
-        content: '';
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
-@mixin imagegrid($qty, $margin) {
-    width: ((97% - (($qty - 1) * $margin))/$qty);
-    &:nth-child(n) {
-        margin-right: $margin;
-        margin-bottom: $margin;
-    }
-    &:nth-child(#{$qty}n) {
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-}
-
-@mixin skillpercentage() {
-    height: 23px;
-    background-color: $grey-color;
-}
-
-//MEDIA QUERIES
-@media only screen and (max-width: 1096px) {
-    .skillsection__services {
-        padding-top: 40px !important;
-    }
-}
-
-@media only screen and (max-width: 846px) {
-    .skillsection__services {
-        padding-top: 70px !important;
-    }
-    
-}
-
-@media only screen and (max-width: 768px) {
-    
-    html {
-        overflow-x: hidden;
-    }
-    
-    body {
-        //position: fixed;
-        overflow-x: hidden;
-    }
-    
-    .skillsection__services {
-        padding-top: 70px !important;
-    }
-    
-    //.nomarginright {
-      //  margin-right: 0;
-    //}
-    
-    .whosection {
-        padding-right: 30px !important;
-        width: 100% !important;
-        //margin-right: -5 !important
-        
-        &__row {
-            //margin-right: -5 !important;
-            width: 100%;
-        }
-        
-        &__ourstaff {
-            margin: 0 auto;
-            padding: 0 20px 0 0 !important;
-            
-            &--image {
-                padding-bottom: 5rem;
-                width: 100% !important;
-                height: 250px !important;
-            }
-        }
-    }
-    
-    .hoverlay {
-    width: 100% !important; 
-    height: 100% !important;
-    
-    &__info {
-        width: 100% !important; 
-        height: 80% !important; 
-    }
-}
-
-    .skillsection {
-        padding-right: 30px !important;
-        width: 100% !important;
-        margin-left: 2%;
-    }
-
-    .grey-margin {
-        padding: 0px !important;
-    }
-
-    .skillsection__services {
-        padding-top: 40px !important;
-        margin-bottom: 50px;
-    }
-}
-
-
-
-
-
-//CSS
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .contentcontainer {
     padding: 0;
-}
-
-/*.grid {
-    @include clearfix;
-    .item {
-        float: left;
-        //@include imagegrid(3, 3%);
-    }
-    img {
-        display: block;
-        max-width: 100%;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-}*/
-
-h3 {
-    font-weight: 100;
-    color: $headline-color;
 }
 
 .grey-margin {
@@ -167,6 +17,7 @@ h3 {
     padding-left: 20px;
     width: 48.5%;
     height: 100%;
+    min-height: 820px;
     border-right: 1px solid $text-color;
 
     &__breakline {
@@ -183,20 +34,25 @@ h3 {
     }
     
     &__ourstaff {
-        margin-bottom: -10px;
+        //margin-bottom: -10px;
+        margin-bottom: 20px;
         padding-right: 0px;
         padding-left: 0;
         
         &--image {
             width: 93%;
-            height: 80%
+            height: 100px;
+
         }
     }
 }
 
+
+
 .hoverlay {
     width: 93%; 
-    height: 80%;
+    //height: 80%;
+    height: 100%;
     position: relative; 
     margin: 0px; 
     display: inline-block;
@@ -204,7 +60,8 @@ h3 {
     &__info {
         background-color: rgba(34,184,179,.8); 
         width: 93%; 
-        height: 80%; 
+        height: 100%; 
+        //max-height: 80%;
         position: absolute; 
         top: 0px; 
         left: 1px;
@@ -233,6 +90,7 @@ h3 {
         }
     }
 }
+
 
 
 
