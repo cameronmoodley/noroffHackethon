@@ -382,7 +382,7 @@ h3 {
   .sidenav {
     width: 250px !important; } }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 650px) {
   .sidenav__miniMenu {
     display: none; } }
 

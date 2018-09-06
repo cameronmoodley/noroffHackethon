@@ -6,40 +6,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900" rel="stylesheet">
     <title>Services</title>
 </head>
 <body id="serviceBody">
-    <span class="[ hamburgerMenu ]" onclick="openNav()">&#9776;</span>
-        <div id="mySidenav" class="[ sidenav ]">
-            <img class="[ sidenav__menuImg ]" src="images/menu/350x120.png" alt="Logo" width="100%">
-            <ul class="[ sidenav__list ]">
-                <li class="[ sidenav__item sidenav__closebtn ]"><a href="javascript:void(0)" class="[ sidenav__item--link ]" onclick="closeNav()">CLOSE</a></li>
-                <li class="[ sidenav__item ]"><a href="index.html" class="[ sidenav__item--link ]">HOME</a></li>
-                <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link sidenav__active ]">WORK</a></li>
-                <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link ]">ABOUT</a></li>
-                <li class="[ sidenav__item ]"><a href="blog.html" class="[ sidenav__item--link ]">BLOG</a></li>
-                <li class="[ sidenav__item ]"><a href="services.html" class="[ sidenav__item--link ]">SERVICES</a></li>
-                <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
-            </ul>
-        <div class="sidenav__miniMenu">
-            <a href="#" class="[ sidenav__miniMenu--filter ]">Filter</a><br>
-            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">All works</a><br>
-            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Web design</a><br>
-            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Illustration</a><br>
-            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Photagraphy</a><br>
-            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Wallpapers</a><br>
-            <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Brochures</a><br>
-            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="30px"></a>
-            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="28px"></a>
-            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
-            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
-            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
-            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
-            <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
-            <p class="[ sidenav__grayTxt ]">&#160; 2014 Kappe, All Rights Reserved</p>
-        </div>
+  <!-- Hamburger menu for smaller screens -->
+  <span class="[ hamburgerMenu ]" onclick="openNav()">&#9776;</span>
+
+  <!-- Navbar -->
+  <div id="mySidenav" class="[ sidenav ]">
+
+      <!-- close button for smaller screen -->
+    <span class="[ sidenav__closebtn ]"><a href="javascript:void(0)" class="[ sidenav__item--link ]" onclick="closeNav()">X</a></span>
+
+    <!-- Header -->
+    <img class="[ sidenav__menuImg ]" src="images/menu/350x120.png" alt="Logo" width="100%">
+
+    <!-- Main Menu -->
+    <ul class="[ sidenav__list ]">
+      <li class="[ sidenav__item ]"><a href="index.html" class="[ sidenav__item--link ]">HOME</a></li>
+      <li class="[ sidenav__item ]"><a href="workpage.html" class="[ sidenav__item--link ]">WORK</a></li>
+      <li class="[ sidenav__item ]"><a href="about.html" class="[ sidenav__item--link ]">ABOUT</a></li>
+      <li class="[ sidenav__item ]"><a href="blog.html" class="[ sidenav__item--link ]">BLOG</a></li>
+      <li class="[ sidenav__item ]"><a href="services.html" class="[ sidenav__item--link sidenav__active ]">SERVICES</a></li>
+      <li class="[ sidenav__item ]"><a href="contact.html" class="[ sidenav__item--link ]">CONTACT</a></li>
+    </ul>
+
+    <!-- Small Menu -->
+    <div class="[ sidenav__miniMenu ]">
+      <a href="#" class="[ sidenav__miniMenu--filter ]">Filter</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">All works</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Web design</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Illustration</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Photagraphy</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Wallpapers</a><br>
+      <a href="#" class="[ sidenav__grayTxt sidenav__hover ]">Brochures</a><br>
+
+      <!-- Social media and copyright claim -->
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/facebook.png" alt="facebook icon" width="23px"></a>
+      <a href="#"><img class="[ sidenav__icons sidenav__paddingTop ]" src="images/menu/twitter.png" alt="twitter icon" width="25px"></a>
+      <p class="[ sidenav__grayTxt ]">&#160; 2014 Kappe, All Rights Reserved</p>
     </div>
-    <div class="[ site ]">
+  </div>
+
+  <!-- home webpage container -->
+  <div class="[ site ]">
         <div class="[ container-fluid ]">
             <div class="[ services ][ col-sm-12 ]">
                 <div class="[ services--header ][ jumbotron ]">
@@ -49,11 +65,11 @@
                 <div class="[ services--info ][ col-sm-12 ]">
                     <div class="[ services--info__text ]">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                     </div>
@@ -64,7 +80,7 @@
                         <p>Web design</p>
                         <p>Development</p>
                         <p>SEO</p>
-                    </div>  
+                    </div>
                     <div class="[ services--offer__deals ][ col-sm-12 ]">
                         <h3>What that means to you</h3><hr>
                         <p>Get a website, easy</p>
@@ -99,7 +115,7 @@
                     </div>
                     <div class="[ services--project__img ][ col-sm-4 ]">
                         <a href="Images/work page/carousel2.jpg" data-fancybox="project" data-width="852" data-height="480" data-caption="Project gallery">
-                            <img src="Images/work page/carousel2.jpg" />                        
+                            <img src="Images/work page/carousel2.jpg" />
                         </a>
                     </div>
                     <div class="[ services--project__img ][ col-sm-4 ]">
