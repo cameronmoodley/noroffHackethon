@@ -127,6 +127,7 @@ h3 {
       width: 100%;
       height: 100%; }
     .hoverlay__info--tablecell {
+      padding-top: 15px;
       display: table-cell;
       vertical-align: middle; }
     .hoverlay__info--textcontainer {

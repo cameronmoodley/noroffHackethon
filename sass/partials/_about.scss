@@ -34,7 +34,6 @@
     }
     
     &__ourstaff {
-        //margin-bottom: -10px;
         margin-bottom: 20px;
         padding-right: 0px;
         padding-left: 0;
@@ -75,6 +74,7 @@
         }
         
         &--tablecell {
+            padding-top: 15px;
             display: table-cell;
             vertical-align: middle;
         }
