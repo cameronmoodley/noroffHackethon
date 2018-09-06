@@ -82,15 +82,10 @@ body {
     padding-top: 70px !important; } }
 
 @media only screen and (max-width: 768px) {
-  html {
-    overflow-x: hidden; }
-  body {
-    overflow-x: hidden; }
   .skillsection__services {
-    padding-top: 70px !important; }
+    padding-top: 0px !important; }
   .whosection {
-    padding-right: 30px !important;
-    width: 100% !important; }
+    width: 97% !important; }
     .whosection__row {
       width: 100%; }
     .whosection__ourstaff {
@@ -98,22 +93,19 @@ body {
       padding: 0 20px 0 0 !important; }
       .whosection__ourstaff--image {
         padding-bottom: 5rem;
-        width: 100% !important;
-        height: 250px !important; }
+        width: 100% !important; }
   .hoverlay {
     width: 100% !important;
     height: 100% !important; }
     .hoverlay__info {
       width: 100% !important;
-      height: 80% !important; }
+      height: 88% !important; }
   .skillsection {
-    padding-right: 30px !important;
-    width: 100% !important;
+    width: 97% !important;
     margin-left: 2%; }
   .grey-margin {
     padding: 0px !important; }
   .skillsection__services {
-    padding-top: 40px !important;
     margin-bottom: 50px; } }
 
 body {
@@ -458,8 +450,7 @@ h3 {
   height: 38px; }
 
 .overlay {
-  padding-left: 0px;
-  padding-right: 0px; }
+  padding-left: 7px; }
 
 .mainform {
   border: solid white 0.5px !important;
@@ -469,9 +460,11 @@ h3 {
     margin: 0;
     padding-top: 40px; }
     .mainform--information__fonttypeH {
-      font-weight: 100; }
+      font-weight: 100;
+      color: slategray !important; }
     .mainform--information__fonttypeB {
-      font-weight: 100; }
+      font-weight: 100;
+      color: slategray !important; }
     .mainform--information__fonttype {
       font-weight: normal;
       color: lightslategray !important; }
@@ -527,17 +520,10 @@ h3 {
     .displays--googlemap__show {
       display: none; }
 
-.commentfield {
-  margin: 0px; }
-
 /*BREAKPOINT*/
 @media (min-width: 767px) {
-  .mainform {
-    padding-left: 0px; }
   .contactbody {
-    overflow: hidden;
-    padding-left: 0px;
-    padding-top: 0px; }
+    overflow: hidden; }
   .containcontainer {
     padding: 0px; }
   .mainform {
@@ -551,7 +537,7 @@ h3 {
   .overlay {
     position: absolute;
     top: 10px;
-    left: 10px; }
+    left: 25px; }
   .displays {
     margin: 0;
     overflow: hidden; }
@@ -561,7 +547,7 @@ h3 {
         display: block; }
   .commentfield {
     padding-left: 0px;
-    padding-right: 20px; }
+    padding-right: 0px; }
   .contexts {
     padding: 11px;
     margin-left: 5px; }
