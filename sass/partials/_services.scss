@@ -1,29 +1,3 @@
-@media screen and (max-width: 767px) {
-    .services{
-        margin: 0!important;
-        padding: 0 !important;
-        &--offer{
-            border-right: none!important;
-        }
-        &--project{
-            &__img{
-                & img{
-                    margin:  10px 0 !important;
-                    width: 100% !important;
-                    height: auto;  
-                    border: 1px solid grey;   
-                }
-            }
-        }
-        &--getintouch{
-            &__btn{
-                width: 100%;
-                margin: 10px 0!important;
-            }
-        }
-    }
-}
-
 #serviceBody{
     background-color: grey;
 }
@@ -48,9 +22,9 @@
         &__img{
             & img{
                 width: 100%;
-                height: auto;  
-                border: 1px solid grey;  
-                margin: 15px;    
+                height: auto;
+                border: 1px solid grey;
+                margin: 15px;
             }
         }
     }
@@ -75,6 +49,31 @@
             margin: 25px;
             &:hover{
                 border: 2px solid black;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .services{
+        margin: 0!important;
+        padding: 0 !important;
+        &--offer{
+            border-right: none!important;
+        }
+        &--project{
+            &__img{
+                & img{
+                    margin:  10px 0 !important;
+                    width: 100% !important;
+                    height: auto;
+                    border: 1px solid grey;
+                }
+            }
+        }
+        &--getintouch{
+            &__btn{
+                width: 100%;
+                margin: 10px 0!important;
             }
         }
     }

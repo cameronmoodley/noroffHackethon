@@ -3,14 +3,14 @@
   font-size: 30px;
   cursor: pointer;
   z-index: 2;
-  background-color: #232B2E;
+  background-color: $sidebarColor;
   color: white;
   padding: 2px 12px;
   display: none;
 }
 
 .sidenav {
-  background-color: #232B2E;
+  background-color: $sidebarColor;
   position: fixed;
   height: 100%;
   width: 250px;
@@ -34,7 +34,7 @@
 
   &__item {
     text-align: right;
-    border-bottom: #232B2E solid 1px;
+    border-bottom: $sidebarColor solid 1px;
 
     &--link {
       text-decoration: none;
@@ -47,12 +47,12 @@
     &--link:hover {
       text-decoration: none;
       color: white;
-      background-color: #24AEAE;
+      background-color: $menuBtnHover;
     }
   }
 
   &__active {
-    background-color: #24AEAE;
+    background-color: $menuBtnHover;
   }
 
   &__miniMenu {
@@ -60,12 +60,12 @@
     padding-right: 2rem;
 
     &--filter {
-      color: #24AEAE;
+      color: $menuBtnHover;
       font-size: 17px;
     }
 
     &--filter:hover {
-      color: #24AEAE;
+      color: $menuBtnHover;
     }
   }
 
@@ -119,7 +119,7 @@
   }
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 650px) {
   .sidenav {
 
     &__miniMenu {
