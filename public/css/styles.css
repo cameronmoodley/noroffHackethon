@@ -154,14 +154,14 @@ h3 {
   font-size: 12px;
   background-color: #f3f3f3;
   padding-top: 20px;
-  color: #bfbfbf;
+  color: #a3a3a3;
   margin-left: 1.5%;
   padding-left: 20px;
   width: 48.5%;
   height: 100%;
-  border-right: 1px solid #bfbfbf; }
+  border-right: 1px solid #a3a3a3; }
   .whosection__breakline {
-    border-color: #bfbfbf; }
+    border-color: #a3a3a3; }
   .whosection__image {
     width: 100%; }
   .whosection__row {
@@ -200,7 +200,7 @@ h3 {
 .skillsection {
   font-size: 12px;
   background-color: #f3f3f3;
-  color: #bfbfbf;
+  color: #a3a3a3;
   width: 48.5%;
   height: 100%;
   padding-right: 20px; }
@@ -217,23 +217,23 @@ h3 {
     margin-bottom: 0; }
   .skillsection__skillbar {
     clear: both;
-    border: 1px solid #bfbfbf;
+    border: 1px solid #a3a3a3;
     margin-bottom: 10px; }
     .skillsection__skillbar--design {
       height: 23px;
-      background-color: #bfbfbf;
+      background-color: #a3a3a3;
       width: 89%; }
     .skillsection__skillbar--development {
       height: 23px;
-      background-color: #bfbfbf;
+      background-color: #a3a3a3;
       width: 97%; }
     .skillsection__skillbar--plugins {
       height: 23px;
-      background-color: #bfbfbf;
+      background-color: #a3a3a3;
       width: 85%; }
     .skillsection__skillbar--frontend {
       height: 23px;
-      background-color: #bfbfbf;
+      background-color: #a3a3a3;
       width: 75%; }
   .skillsection__testimonial {
     height: 100px; }
@@ -245,8 +245,8 @@ h3 {
     .skillsection__testimonial--header {
       height: 50px;
       width: 100%;
-      border: 1px solid #bfbfbf;
-      background-color: #22b8b3; }
+      border: 1px solid #a3a3a3;
+      background-color: #1ab5b3; }
     .skillsection__testimonial--image {
       width: 48px;
       float: left; }
@@ -255,9 +255,9 @@ h3 {
       padding-left: 70px;
       color: #f3f3f3; }
     .skillsection__testimonial--text {
-      border-left: 1px solid #bfbfbf;
-      border-bottom: 1px solid #bfbfbf;
-      border-right: 1px solid #bfbfbf;
+      border-left: 1px solid #a3a3a3;
+      border-bottom: 1px solid #a3a3a3;
+      border-right: 1px solid #a3a3a3;
       padding: 10px; }
   .skillsection__services {
     padding-top: 25px; }
