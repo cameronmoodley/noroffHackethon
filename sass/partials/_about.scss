@@ -33,7 +33,7 @@ $roundness: 20px 0 20px 0;
 
 @mixin skillpercentage() {
     height: 23px;
-    background-color: $text-color;
+    background-color: $grey-color;
 }
 
 //MEDIA QUERIES
@@ -47,6 +47,7 @@ $roundness: 20px 0 20px 0;
     .skillsection__services {
         padding-top: 70px !important;
     }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -57,8 +58,13 @@ $roundness: 20px 0 20px 0;
     .whosection {
         width: 97% !important;
         
+        &__row {
+            width: 100%;
+        }
+        
         &__ourstaff {
-            margin: 0% 10%;
+            margin: 0 auto;
+            padding: 0 20px 0 0 !important;
             
             &--image {
                 padding-bottom: 5rem;
@@ -70,29 +76,10 @@ $roundness: 20px 0 20px 0;
     .hoverlay {
     width: 100% !important; 
     height: 100% !important;
-    position: relative; 
-    margin: 0px; 
-    display: inline-block;
     
     &__info {
-        background-color: rgba(34,184,179,.8); 
         width: 100% !important; 
-        height: 89% !important; 
-        position: absolute; 
-        top: 0px; 
-        left: 1px;
-        display: none;
-        
-        &--textcontainer {
-            padding-top: 4rem;
-            text-align: center;
-            color: $white-color;
-            font-size: 1rem; 
-        }
-        
-        &--headline {
-            margin: 0;
-        }
+        height: 88% !important; 
     }
 }
 
@@ -142,6 +129,7 @@ body {
 
 h3 {
     font-weight: 100;
+    color: $headline-color;
 }
 
 .grey-margin {
@@ -202,8 +190,19 @@ h3 {
         left: 1px;
         display: none;
         
+        &--tablecontainer {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        
+        &--tablecell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
         &--textcontainer {
-            padding-top: 4rem;
             text-align: center;
             color: $white-color;
             font-size: 1rem; 
@@ -214,6 +213,8 @@ h3 {
         }
     }
 }
+
+
 
 
 .skillsection {
@@ -237,7 +238,7 @@ h3 {
 
     &__skillbar {
         clear: both;
-        border: 1px solid $text-color;
+        border: 1px solid $grey-color;
         margin-bottom: 10px;
         &--design {
             @include skillpercentage();
