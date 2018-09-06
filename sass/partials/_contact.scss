@@ -1,3 +1,6 @@
+.site{
+    
+}
 .btn-success{
     background-color:#1AB4B2 !important;
     border-color: white !important;
@@ -17,17 +20,17 @@
         margin: 0;
         padding-top: 40px;
         &__fonttypeH{
-        font-weight:100;
-        color: slategray !important;
-        } 
-    &__fonttypeB{
-        font-weight:100;
-        color: slategray !important;
-        }      
-    &__fonttype{
-        font-weight: normal;
-        color: lightslategray !important;
-        }
+            font-weight:100;
+            color: slategray !important;
+            } 
+        &__fonttypeB{
+            font-weight:100;
+            color: slategray !important;
+            }      
+        &__fonttype{
+            font-weight: normal;
+            color: lightslategray !important;
+            }
     }
     
 }
@@ -35,6 +38,7 @@
 
 .contexts{
     padding: 11px;
+    margin-left: 5px;
     &--form{
         margin-bottom: 0px;
         height: 10px;
@@ -67,7 +71,9 @@
         color: #1AB4B2;
         min-width: 50px;
         text-align: center;
-        border: solid lightgray 0.2px;
+        border-top:0.2px solid lightgray;
+        border-left:0.2px solid lightgray;
+        border-bottom:0.2px solid lightgray;
     }
 }
 
@@ -91,11 +97,18 @@
     }
 }
 
-
+.commentfield{
+    padding-left: 0px;
+    padding-right: 0px;
+        
+}
 
 /*BREAKPOINT*/
 @media (min-width: 767px) {
     
+    .contactbody{
+        overflow: hidden;
+    }
     .containcontainer{
         padding: 0px;
         
@@ -103,22 +116,55 @@
     .mainform{
     border: solid lightslategray 0.5px;
     background-color: white;
-    height: 450px;
+    height: 410px;
     padding-right: 15px;
+        &--information{
+            padding-left: 26px; 
+            padding-top: 8px;
+        }
     
     }
     .overlay{
     position: absolute;
     top: 10px;
-    left: 18px;
+    left: 25px;
     }
+    
     
     .displays{
     margin: 0;
+    overflow: hidden;
     &--googlemap{
         margin: 0;
         &__show{
             display: block;
+            }
+        }
+    }
+    
+    .commentfield{
+    padding-left: 10px;
+    padding-right: 0px;
+        
+    }
+    .contexts{
+    padding: 11px;
+    margin-left: 5px;
+    &--form{
+        margin-bottom: 0px;
+        height: 10px;
+        margin: 0px;
+        &__comment{
+            height: 95px !important;
+            border-radius: 0px;
+        }
+        &__button{
+            padding-top: 5px;
+            font-weight:100;
+            font-size: 10px;
+            color: white !important;
+            height: 45px !important;
+            border-radius: 0px;
             }
         }
     }
