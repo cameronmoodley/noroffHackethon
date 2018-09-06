@@ -47,6 +47,7 @@ $roundness: 20px 0 20px 0;
     .skillsection__services {
         padding-top: 70px !important;
     }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -57,8 +58,13 @@ $roundness: 20px 0 20px 0;
     .whosection {
         width: 97% !important;
         
+        &__row {
+            width: 100%;
+        }
+        
         &__ourstaff {
-            margin: 0% 10%;
+            margin: 0 auto;
+            padding-right: 50px;
             
             &--image {
                 padding-bottom: 5rem;
@@ -70,29 +76,10 @@ $roundness: 20px 0 20px 0;
     .hoverlay {
     width: 100% !important; 
     height: 100% !important;
-    position: relative; 
-    margin: 0px; 
-    display: inline-block;
     
     &__info {
-        background-color: rgba(34,184,179,.8); 
         width: 100% !important; 
-        height: 89% !important; 
-        position: absolute; 
-        top: 0px; 
-        left: 1px;
-        display: none;
-        
-        &--textcontainer {
-            padding-top: 4rem;
-            text-align: center;
-            color: $white-color;
-            font-size: 1rem; 
-        }
-        
-        &--headline {
-            margin: 0;
-        }
+        height: 88% !important; 
     }
 }
 
@@ -203,8 +190,19 @@ h3 {
         left: 1px;
         display: none;
         
+        &--tablecontainer {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        
+        &--tablecell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
         &--textcontainer {
-            padding-top: 4rem;
             text-align: center;
             color: $white-color;
             font-size: 1rem; 
@@ -215,6 +213,8 @@ h3 {
         }
     }
 }
+
+
 
 
 .skillsection {
