@@ -1,4 +1,5 @@
-$fontFam: 'Roboto', sans-serif;
+$fontFam: 'Roboto',
+sans-serif;
 $cardcol: #22B8B3;
 $cardbacol: #1C2326;
 $colcol: rgb(252, 249, 249);
@@ -6,26 +7,23 @@ $colcolW: #FFFFFF;
 $bgcolor: #B3B7B8;
 $cardblu: #1AB4B2;
 
-
-.blog-color{
+.blog-color {
     background-color: $grey-margin-color;
 }
 
-.card{
-   
+.card {
     font-family: $fontFam;
     margin: 5px;
-   
-    
-    
+
     &__card-body {
         text-align: center;
-       color:white;
-       background-color: $cardblu;
-       padding: 11px;
-       font-family: $fontFam;
+        color: white;
+        background-color: $cardblu;
+        padding: 11px;
+        font-family: $fontFam;
     }
-    &__card-body--q{
+
+    &__card-body--q {
         background-color: $cardbacol;
         border-left: 25px solid $cardblu;
         padding: 10px;
@@ -34,65 +32,55 @@ $cardblu: #1AB4B2;
         border-right-color: gray;
         font-family: $fontFam;
         font-size: 0.8rem;
-       
     }
-    &__card-body--c{
+
+    &__card-body--c {
         color: $cardcol;
         text-align: center;
         font-size: 1.5rem;
-       
     }
-    &__card-body--p{
-        color:$cardcol;
+
+    &__card-body--p {
+        color: $cardcol;
         padding: 0px;
         text-align: center;
         font-size: 3rem;
     }
-    
 
-
-    &__card-body--W{
+    &__card-body--W {
         background-color: $colcol;
         padding: 5px;
         text-align: left;
         font-size: 0.9rem;
-
-       
     }
-    &__card-body--ic{
+
+    &__card-body--ic {
         color: $bgcolor;
         font-size: 1.1rem;
         margin: 4px;
     }
-    &__card--body__text-muted{
+
+    &__card--body__text-muted {
         color: $colcol;
         font-size: 0.9rem;
         margin: 4px;
     }
-    &__card--body__text-muted--W{
-        
+
+    &__card--body__text-muted--W {
         font-size: 0.9rem;
         color: $bgcolor;
     }
- 
-   
-
 }
 
-
-
-.card:hover{
-       box-shadow: 6px 4px 5px 0px #888888;
+.card:hover {
+    box-shadow: 6px 4px 5px 0px #888888;
 }
 
-.bt-no{
+.bt-no {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 0.9px;
     position: sticky;
-    
-    
-   
 
     &__item {
         width: 150px;
@@ -103,5 +91,3 @@ $cardblu: #1AB4B2;
         border-radius: 10px 10px 0px 0px;
     }
 }
-
-
