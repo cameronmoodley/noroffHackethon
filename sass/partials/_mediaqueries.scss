@@ -40,7 +40,8 @@
             &--image {
                 padding-bottom: 5rem;
                 width: 100% !important;
-                height: 150px !important;
+                max-height: 300px;
+                height: 100% !important;
             }
         }
     }

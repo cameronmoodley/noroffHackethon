@@ -7,10 +7,12 @@ $bgcolor: #B3B7B8;
 $cardblu: #1AB4B2;
 
 
-
+.blog-color{
+    background-color: $grey-margin-color;
+}
 
 .card{
-    
+   
     font-family: $fontFam;
     margin: 5px;
    
@@ -77,9 +79,19 @@ $cardblu: #1AB4B2;
 
 }
 
+
+
+.card:hover{
+       box-shadow: 6px 4px 5px 0px #888888;
+}
+
 .bt-no{
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 0.9px;
+    position: sticky;
+    
+    
    
 
     &__item {
