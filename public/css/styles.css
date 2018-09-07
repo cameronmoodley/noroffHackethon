@@ -1,6 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+h3 {
+  font-weight: 100;
+  color: #000000; }
+
 #workpageBody {
   background-color: grey;
   padding: 10px; }
@@ -69,74 +73,8 @@ body {
     width: 50%;
     height: auto; } }
 
-@media only screen and (max-width: 1096px) {
-  .skillsection__services {
-    padding-top: 40px !important; } }
-
-@media only screen and (max-width: 846px) {
-  .skillsection__services {
-    padding-top: 70px !important; } }
-
-@media only screen and (max-width: 768px) {
-  html {
-    overflow-x: hidden; }
-  body {
-    overflow-x: hidden; }
-  .skillsection__services {
-    padding-top: 70px !important; }
-  .whosection {
-    padding-right: 30px !important;
-    width: 100% !important; }
-    .whosection__row {
-      width: 100%; }
-    .whosection__ourstaff {
-      margin: 0 auto;
-      padding: 0 20px 0 0 !important; }
-      .whosection__ourstaff--image {
-        padding-bottom: 5rem;
-        width: 100% !important;
-        height: 250px !important; }
-  .hoverlay {
-    width: 100% !important;
-    height: 100% !important; }
-    .hoverlay__info {
-      width: 100% !important;
-      height: 80% !important; }
-  .skillsection {
-    padding-right: 30px !important;
-    width: 100% !important;
-    margin-left: 2%; }
-  .grey-margin {
-    padding: 0px !important; }
-  .skillsection__services {
-    padding-top: 40px !important;
-    margin-bottom: 50px; } }
-
-body {
-  margin: 0;
-  padding: 0; }
-
 .contentcontainer {
   padding: 0; }
-
-/*.grid {
-    @include clearfix;
-    .item {
-        float: left;
-        //@include imagegrid(3, 3%);
-    }
-    img {
-        display: block;
-        max-width: 100%;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-}*/
-h3 {
-  font-weight: 100;
-  color: #000000; }
 
 .grey-margin {
   padding: 20px;
@@ -152,6 +90,7 @@ h3 {
   padding-left: 20px;
   width: 48.5%;
   height: 100%;
+  min-height: 820px;
   border-right: 1px solid #a3a3a3; }
   .whosection__breakline {
     border-color: #a3a3a3; }
@@ -161,23 +100,23 @@ h3 {
     padding-right: 15px;
     padding-left: 15px; }
   .whosection__ourstaff {
-    margin-bottom: -10px;
+    margin-bottom: 20px;
     padding-right: 0px;
     padding-left: 0; }
     .whosection__ourstaff--image {
       width: 93%;
-      height: 80%; }
+      height: 100px; }
 
 .hoverlay {
   width: 93%;
-  height: 80%;
+  height: 100%;
   position: relative;
   margin: 0px;
   display: inline-block; }
   .hoverlay__info {
     background-color: rgba(34, 184, 179, 0.8);
     width: 93%;
-    height: 80%;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 1px;
@@ -188,6 +127,7 @@ h3 {
       width: 100%;
       height: 100%; }
     .hoverlay__info--tablecell {
+      padding-top: 15px;
       display: table-cell;
       vertical-align: middle; }
     .hoverlay__info--textcontainer {
@@ -404,50 +344,6 @@ h3 {
   .sidenav__miniMenu {
     display: none; } }
 
-.contact2 {
-  position: relative;
-  padding: 0px; }
-  .contact2--body {
-    overflow: hidden !important; }
-  .contact2--form {
-    position: absolute;
-    background-color: white;
-    top: 10px;
-    left: 10px;
-    z-index: 9999;
-    padding: 15px; }
-  .contact2--elements {
-    position: relative;
-    margin-top: 20px; }
-    .contact2--elements i {
-      color: #1AB4B2;
-      position: absolute;
-      font-size: 25px;
-      top: 12px;
-      left: 6px; }
-    .contact2--elements input {
-      width: 100%;
-      height: 50px;
-      margin-bottom: 0px;
-      padding-left: 35px; }
-    .contact2--elements textarea {
-      height: 120px;
-      width: 100%; }
-    .contact2--elements button {
-      width: 100%;
-      height: 50px;
-      margin-top: -7px;
-      border: none;
-      box-shadow: none;
-      border-radius: 0px;
-      color: #ffffff;
-      background-color: #1AB4B2; }
-
-@media only screen and (max-width: 767px) {
-  .contact2--form {
-    position: relative;
-    z-index: 99; } }
-
 .hed {
   background-color: #F3F3F3; }
   .hed__elemet--slider {
@@ -506,12 +402,13 @@ h3 {
 
 .overlay {
   padding-left: 0px;
-  padding-right: 0px; }
+  padding-right: 0px;
+  height: 620px; }
 
 .mainform {
   border: solid white 0.5px !important;
   background-color: white;
-  height: 2px; }
+  height: 1000p; }
   .mainform--information {
     margin: 0;
     padding-top: 40px; }
@@ -716,3 +613,46 @@ h3 {
     .services--getintouch__btn {
       width: 100%;
       margin: 10px 0 !important; } }
+
+@media only screen and (max-width: 1096px) {
+  .skillsection__services {
+    padding-top: 40px !important; } }
+
+@media only screen and (max-width: 846px) {
+  .skillsection__services {
+    padding-top: 70px !important; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden; }
+  body {
+    overflow-x: hidden; }
+  .skillsection__services {
+    padding-top: 70px !important; }
+  .whosection {
+    padding-right: 30px !important;
+    width: 100% !important; }
+    .whosection__row {
+      width: 100%; }
+    .whosection__ourstaff {
+      margin: 0 auto;
+      padding: 0 20px 0 0 !important; }
+      .whosection__ourstaff--image {
+        padding-bottom: 5rem;
+        width: 100% !important;
+        height: 150px !important; }
+  .hoverlay {
+    width: 100% !important;
+    height: 100% !important; }
+    .hoverlay__info {
+      width: 100% !important;
+      height: 80% !important; }
+  .skillsection {
+    padding-right: 30px !important;
+    width: 100% !important;
+    margin-left: 2%; }
+  .grey-margin {
+    padding: 0px !important; }
+  .skillsection__services {
+    padding-top: 40px !important;
+    margin-bottom: 50px; } }

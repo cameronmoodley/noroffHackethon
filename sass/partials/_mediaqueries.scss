@@ -1,0 +1,72 @@
+@media only screen and (max-width: 1096px) {
+    .skillsection__services {
+        padding-top: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 846px) {
+    .skillsection__services {
+        padding-top: 70px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .skillsection__services {
+        padding-top: 70px !important;
+    }
+    
+    .whosection {
+        padding-right: 30px !important;
+        width: 100% !important;
+        
+        &__row {
+            width: 100%;
+        }
+        
+        &__ourstaff {
+            margin: 0 auto;
+            padding: 0 20px 0 0 !important;
+            
+            &--image {
+                padding-bottom: 5rem;
+                width: 100% !important;
+                height: 150px !important;
+            }
+        }
+    }
+    
+    .hoverlay {
+    width: 100% !important; 
+    height: 100% !important;
+    
+    &__info {
+        width: 100% !important; 
+        height: 80% !important; 
+    }
+}
+
+    .skillsection {
+        padding-right: 30px !important;
+        width: 100% !important;
+        margin-left: 2%;
+    }
+
+    .grey-margin {
+        padding: 0px !important;
+    }
+
+    .skillsection__services {
+        padding-top: 40px !important;
+        margin-bottom: 50px;
+    }
+}
