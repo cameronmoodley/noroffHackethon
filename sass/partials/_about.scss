@@ -40,7 +40,8 @@
         
         &--image {
             width: 93%;
-            height: 100px;
+            height: 100%;
+            max-height: 200px;
 
         }
     }

@@ -105,7 +105,8 @@ h3 {
     padding-left: 0; }
     .whosection__ourstaff--image {
       width: 93%;
-      height: 100px; }
+      height: 100%;
+      max-height: 200px; }
 
 .hoverlay {
   width: 93%;
@@ -640,7 +641,8 @@ h3 {
       .whosection__ourstaff--image {
         padding-bottom: 5rem;
         width: 100% !important;
-        height: 150px !important; }
+        max-height: 300px;
+        height: 100% !important; }
   .hoverlay {
     width: 100% !important;
     height: 100% !important; }
