@@ -213,7 +213,6 @@ h3 {
   background-color: #b3b7b8; }
 
 .card {
-  box-shadow: 4px 4px #888888;
   font-family: "Roboto", sans-serif;
   margin: 5px; }
   .card__card-body {
@@ -257,12 +256,14 @@ h3 {
     font-size: 0.9rem;
     color: #B3B7B8; }
 
+.card:hover {
+  box-shadow: 6px 4px 5px 0px #888888; }
+
 .bt-no {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 0.9px;
-  position: sticky;
-  outline: none !important; }
+  position: sticky; }
   .bt-no__item {
     width: 150px;
     background-color: #1AB4B2;
