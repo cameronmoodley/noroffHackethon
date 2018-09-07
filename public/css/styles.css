@@ -418,7 +418,7 @@ h3 {
 .mainform {
   border: solid white 0.5px !important;
   background-color: white;
-  height: 1000p; }
+  height: 1000px; }
   .mainform--information {
     margin: 0;
     padding-top: 40px; }
@@ -469,7 +469,7 @@ h3 {
     border-bottom: 0.2px solid lightgray; }
 
 .input--field {
-  width: 100%;
+  width: 200px;
   padding: 10px;
   outline: none; }
 
@@ -487,7 +487,79 @@ h3 {
   margin: 0px; }
 
 /*BREAKPOINT*/
-@media (min-width: 767px) {
+@media (min-width: 769px) {
+  .input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 900px !important;
+    height: 45px;
+    margin-bottom: 7px; }
+    .input-container__icon {
+      padding: 13px;
+      padding-top: 16px;
+      background: white;
+      color: #1AB4B2;
+      min-width: 50px;
+      text-align: center;
+      border-top: 0.2px solid lightgray;
+      border-left: 0.2px solid lightgray;
+      border-bottom: 0.2px solid lightgray; }
+  .contactbody {
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px; }
+  .containcontainer {
+    padding: 0px; }
+  .mainform {
+    border: solid lightslategray 0.5px;
+    background-color: white;
+    height: 600px;
+    padding-right: 15px; }
+    .mainform--information {
+      padding-left: 28px;
+      padding-right: 8px !important;
+      padding-top: 8px; }
+  .overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .displays {
+    margin: 0;
+    overflow: hidden !important; }
+    .displays--googlemap {
+      overflow: hidden !important;
+      margin: 0; }
+      .displays--googlemap__show {
+        overflow: hidden !important;
+        display: block;
+        height: 905px;
+        width: "100%"; }
+  .commentfield {
+    padding-left: 0px;
+    padding-right: 20px; }
+  .contexts {
+    height: 95px;
+    padding: 0px;
+    margin-left: 5px; }
+    .contexts--form {
+      margin-bottom: 0px;
+      height: 10px;
+      margin: 0px; }
+      .contexts--form__comment {
+        height: 95px !important;
+        border-radius: 0px; }
+      .contexts--form__button {
+        padding-top: 5px;
+        font-weight: 100;
+        font-size: 10px;
+        color: white !important;
+        height: 45px !important;
+        border-radius: 0px; } }
+
+/*BREAKPOINT IPAD*/
+@media (min-width: 1292px) {
   .input-container {
     display: -ms-flexbox;
     /* IE10 */
@@ -526,11 +598,13 @@ h3 {
     top: 10px;
     left: 10px; }
   .displays {
-    margin: 0;
-    overflow: hidden; }
+    margin: 0; }
     .displays--googlemap {
       margin: 0; }
       .displays--googlemap__show {
+        overflow: hidden;
+        height: 1305px;
+        width: "100%";
         display: block; }
   .commentfield {
     padding-left: 0px;
