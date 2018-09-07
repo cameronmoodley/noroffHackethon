@@ -11,32 +11,31 @@
 .overlay{
     padding-left: 0px;
     padding-right: 0px;
+    height: 620px;
 }
 
 .mainform{
     border: solid white 0.5px !important;
     background-color: white;
-    height: 410px;
+    height: 1000p;
     &--information{
         margin: 0;
         padding-top: 40px;
         &__fonttypeH{
             font-weight:100;
 
-            }
+            } 
         &__fonttypeB{
             font-weight:100;
 
-            }
+            }      
         &__fonttype{
             font-weight: normal;
             color: lightslategray !important;
             }
     }
-
+    
 }
-
-
 .contexts{
     padding: 11px;
     margin-left: 5px;
@@ -104,12 +103,12 @@
 
 /*BREAKPOINT*/
 @media (min-width: 767px) {
-
+    
 
     .mainform{
         padding-left: 0px;
     }
-
+    
     .contactbody{
         overflow: hidden;
         padding-left: 0px;
@@ -117,7 +116,7 @@
     }
     .containcontainer{
         padding: 0px;
-
+        
     }
     .mainform{
     border: solid lightslategray 0.5px;
@@ -125,18 +124,18 @@
     height: 410px;
     padding-right: 15px;
         &--information{
-            padding-left: 26px;
+            padding-left: 26px; 
             padding-top: 8px;
         }
-
+    
     }
     .overlay{
     position: absolute;
     top: 10px;
     left: 10px;
     }
-
-
+    
+    
     .displays{
     margin: 0;
     overflow: hidden;
@@ -147,11 +146,11 @@
             }
         }
     }
-
+    
     .commentfield{
     padding-left: 0px;
     padding-right: 20px;
-
+        
     }
     .contexts{
     padding: 11px;
@@ -174,5 +173,6 @@
             }
         }
     }
-
+    
 }
+
