@@ -208,7 +208,11 @@ h3 {
     .skillsection__services--item {
       margin-bottom: 5px; }
 
+.blog-color {
+  background-color: #b3b7b8; }
+
 .card {
+  box-shadow: 4px 4px #888888;
   font-family: "Roboto", sans-serif;
   margin: 5px; }
   .card__card-body {
@@ -254,7 +258,9 @@ h3 {
 
 .bt-no {
   text-align: center;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 0.9px;
+  position: sticky; }
   .bt-no__item {
     width: 150px;
     background-color: #1AB4B2;
