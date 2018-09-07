@@ -106,7 +106,8 @@ h3 {
     padding-left: 0; }
     .whosection__ourstaff--image {
       width: 93%;
-      height: 100px; }
+      height: 100%;
+      max-height: 200px; }
 
 .hoverlay {
   width: 93%;
@@ -208,6 +209,9 @@ h3 {
     .skillsection__services--item {
       margin-bottom: 5px; }
 
+.blog-color {
+  background-color: #b3b7b8; }
+
 .card {
   font-family: "Roboto", sans-serif;
   margin: 5px; }
@@ -252,9 +256,14 @@ h3 {
     font-size: 0.9rem;
     color: #B3B7B8; }
 
+.card:hover {
+  box-shadow: 6px 4px 5px 0px #888888; }
+
 .bt-no {
   text-align: center;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 0.9px;
+  position: sticky; }
   .bt-no__item {
     width: 150px;
     background-color: #1AB4B2;
@@ -445,7 +454,8 @@ h3 {
   display: flex;
   width: 100%;
   height: 45px;
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  border: solid lightgray 1px; }
   .input-container__icon {
     padding: 13px;
     padding-top: 16px;
@@ -455,6 +465,7 @@ h3 {
     text-align: center;
     border-top: 0.2px solid lightgray;
     border-left: 0.2px solid lightgray;
+    border-right: 0.2px solid lightgray;
     border-bottom: 0.2px solid lightgray; }
 
 .input--field {
@@ -477,6 +488,23 @@ h3 {
 
 /*BREAKPOINT*/
 @media (min-width: 767px) {
+  .input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 7px; }
+    .input-container__icon {
+      padding: 13px;
+      padding-top: 16px;
+      background: white;
+      color: #1AB4B2;
+      min-width: 50px;
+      text-align: center;
+      border-top: 0.2px solid lightgray;
+      border-left: 0.2px solid lightgray;
+      border-bottom: 0.2px solid lightgray; }
   .mainform {
     padding-left: 0px; }
   .contactbody {
@@ -641,7 +669,8 @@ h3 {
       .whosection__ourstaff--image {
         padding-bottom: 5rem;
         width: 100% !important;
-        height: 150px !important; }
+        max-height: 300px;
+        height: 100% !important; }
   .hoverlay {
     width: 100% !important;
     height: 100% !important; }
