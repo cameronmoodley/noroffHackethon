@@ -469,7 +469,7 @@ h3 {
     border-bottom: 0.2px solid lightgray; }
 
 .input--field {
-  width: 200px;
+  width: 100px;
   padding: 10px;
   outline: none; }
 
@@ -515,7 +515,7 @@ h3 {
   .mainform {
     border: solid lightslategray 0.5px;
     background-color: white;
-    height: 600px;
+    height: 400px;
     padding-right: 15px; }
     .mainform--information {
       padding-left: 28px;
