@@ -469,7 +469,7 @@ h3 {
     border-bottom: 0.2px solid lightgray; }
 
 .input--field {
-  width: 100px;
+  width: 150px;
   padding: 10px;
   outline: none; }
 
@@ -486,13 +486,13 @@ h3 {
 .commentfield {
   margin: 0px; }
 
-/*BREAKPOINT*/
+/*BREAKPOINT Ipad?*/
 @media (min-width: 769px) {
   .input-container {
     display: -ms-flexbox;
     /* IE10 */
     display: flex;
-    width: 900px !important;
+    width: 200px !important;
     height: 45px;
     margin-bottom: 7px; }
     .input-container__icon {
@@ -558,7 +558,7 @@ h3 {
         height: 45px !important;
         border-radius: 0px; } }
 
-/*BREAKPOINT IPAD*/
+/*BREAKPOINT Web*/
 @media (min-width: 1292px) {
   .input-container {
     display: -ms-flexbox;

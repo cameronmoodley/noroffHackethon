@@ -1,6 +1,3 @@
-.site{
-}
-
 .btn-success{
     background-color:#1AB4B2 !important;
     border-color: white !important;
@@ -80,7 +77,7 @@
 }
 
 .input--field {
-    width: 100px;
+    width: 150px;
     padding: 10px;
     outline: none;
 }
@@ -103,13 +100,13 @@
     margin:0px;
 }
 
-/*BREAKPOINT*/
+/*BREAKPOINT Ipad?*/
 @media (min-width: 769px) {
     
     .input-container {
     display: -ms-flexbox; /* IE10 */
     display: flex;
-    width: 900px !important;
+    width: 200px !important;
     height: 45px;
     margin-bottom: 7px;
     &__icon{
@@ -200,7 +197,7 @@
     
 }
 
-/*BREAKPOINT IPAD*/ 
+/*BREAKPOINT Web*/ 
 @media (min-width: 1292px) {
     
     .input-container {
@@ -221,7 +218,6 @@
         border-bottom:0.2px solid lightgray;
         }
     }
-    
     
     .mainform{
         padding-left: 0px;
@@ -292,10 +288,6 @@
             border-radius: 0px;
             }
         }
-    }
-    
-    .row{
-        
     }
     
 }
